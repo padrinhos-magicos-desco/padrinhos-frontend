@@ -19,6 +19,7 @@ const LastCall: React.FC = () => {
         buttonColor="#00e88f"
         borderColor="#00e88f"
         buttonTextColor="#000"
+        url="/screen/100"
       />
     </div>
   );
