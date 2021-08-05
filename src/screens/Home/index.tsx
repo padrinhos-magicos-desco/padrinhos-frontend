@@ -3,6 +3,8 @@ import Button from '../../components/button';
 import Benefits from './sections/benefits';
 import LastCall from './sections/last-call';
 
+import SocialProofSection from './sections/social-proof';
+
 import './home.css';
 
 const Home: React.FC = () => {
@@ -23,6 +25,7 @@ const Home: React.FC = () => {
               buttonColor="#000"
               borderColor="#fff"
               buttonTextColor="#fff"
+              useBorder
             />
           </nav>
         </div>

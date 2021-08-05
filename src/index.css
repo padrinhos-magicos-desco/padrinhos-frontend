@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  background: #191a1a;
 }
 
 @font-face {
@@ -14,8 +16,14 @@ body {
 
 @font-face {
   font-family: Aprova;
-  src: url(./fonts/Aprova-Bold.otf);
+  src: url(./fonts/Aprova-Black.otf);
   font-weight: bold;
+}
+
+@font-face {
+  font-family: Aprova;
+  src: url(./fonts/Aprova-Bold.otf);
+  font-weight: 600;
 }
 
 @font-face {
