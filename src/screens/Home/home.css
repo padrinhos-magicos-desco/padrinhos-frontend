@@ -12,10 +12,10 @@
 .Home_section {
   height: 100vh;
   width: 100vw;
+  background-color: #191a1a;
 }
 
 .Home_main-section {
-  background-color: #000;
 }
 
 .Home_header {

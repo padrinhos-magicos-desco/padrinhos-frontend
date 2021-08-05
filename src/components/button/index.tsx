@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './button.css';
 
 type Props = {
-  buttonColor: string;
+  buttonColor?: string;
   buttonText: string;
-  buttonTextColor: string;
-  borderColor: string;
+  buttonTextColor?: string;
+  borderColor?: string;
 };
 
 const Button: React.FC<Props> = ({
@@ -25,6 +25,12 @@ const Button: React.FC<Props> = ({
       </Link>
     </div>
   );
+};
+
+Button.defaultProps = {
+  buttonColor: '#00e88f',
+  buttonTextColor: '#111111',
+  borderColor: 'none',
 };
 
 export default Button;
