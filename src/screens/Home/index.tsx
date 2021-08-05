@@ -1,10 +1,12 @@
 import { useContext, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 import LoadingContext from '../../contexts/loading';
 import Loading from '../../components/loading';
+import { getData } from '../../gateways/api';
+import Logo from '../../components/logo/logo';
 
 import './home.css';
-import { getData } from '../../gateways/api';
 
 const Home: React.FC = () => {
   const { loading, dispatch } = useContext(LoadingContext);
@@ -26,16 +28,17 @@ const Home: React.FC = () => {
   return (
     <>
       <section className="home-screen-section home-screen-main">
-        {/* <nav>
+        <nav>
+          <Logo />
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Padrinho</Link>
             </li>
             <li>
-              <Link to="/screen/100">Screen With Param</Link>
+              <Link to="/screen/100">Apadrinhado</Link>
             </li>
           </ul>
-        </nav> */}
+        </nav>
       </section>
       <section className="home-screen-section home-screen-secondary" />
       <section className="home-screen-section home-screen-benefits" />
