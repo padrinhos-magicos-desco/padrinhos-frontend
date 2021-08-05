@@ -21,7 +21,7 @@ const HowItWorksSection: React.FC = () => {
           showStamp
         />
         <CTACard
-          title="Padrinho"
+          title="Apadrinhado"
           subtitle="O que acontece, com quem, onde etc. Pq é bom ser padrinho"
           topics={[
             'O que eu ganho com isso',
@@ -30,7 +30,7 @@ const HowItWorksSection: React.FC = () => {
             'O que eu ganho com isso',
             'O que eu ganho com isso',
           ]}
-          buttonText="Quero apadrinhar alguém"
+          buttonText="Quero ter um padrinho"
         />
       </div>
     </section>

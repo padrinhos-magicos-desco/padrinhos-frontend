@@ -1,5 +1,4 @@
 .RegisterBox_container {
-  width: 1154px;
   height: 532px;
 
   background: #FFFFFF;
@@ -7,17 +6,17 @@
 }
 
 .RegisterBox_content {
-  position: relative;
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 
 .RegisterBox_footer button {
-  position: absolute;
-  bottom: 186px;
+  position: relative;
+  bottom: 0;
   border: 0;
   background-color: #00E88F;
-  width: 789px;
+  width: 915px;
   height: 96px;
 
   font-style: normal;

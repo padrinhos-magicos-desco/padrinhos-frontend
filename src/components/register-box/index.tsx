@@ -1,11 +1,13 @@
 import './register-box.css';
 
 type Props = {
-  imageUrl: string;
+  imageUrl?: string;
   disabled?: boolean;
   onContinue: () => void;
   children: JSX.Element;
 };
+
+const FALLBACK_IMAGE = '';
 
 const RegisterBox: React.FC<Props> = ({
   imageUrl,
@@ -16,17 +18,19 @@ const RegisterBox: React.FC<Props> = ({
   return (
     <div className="RegisterBox_container">
       <div className="RegisterBox_content">
-        <div className="RegisterBox_body">{children}</div>
+        <div className="RegisterBox_body">
+          {children}
+          <div className="RegisterBox_footer">
+            <button
+              className={disabled ? 'disabled' : ''}
+              type="button"
+              onClick={onContinue}
+            >
+              Continuar
+            </button>
+          </div>
+        </div>
         <img src={imageUrl} alt="" />
-      </div>
-      <div className="RegisterBox_footer">
-        <button
-          className={disabled ? 'disabled' : ''}
-          type="button"
-          onClick={onContinue}
-        >
-          Continuar
-        </button>
       </div>
     </div>
   );
@@ -34,6 +38,7 @@ const RegisterBox: React.FC<Props> = ({
 
 RegisterBox.defaultProps = {
   disabled: false,
+  imageUrl: FALLBACK_IMAGE,
 };
 
 export default RegisterBox;

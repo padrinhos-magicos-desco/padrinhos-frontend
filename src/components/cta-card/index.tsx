@@ -38,7 +38,7 @@ const CTACard: React.FC<Props> = ({
           </div>
         )}
       </div>
-      <Button buttonText={buttonText} url="/screen/100" />
+      <Button buttonText={buttonText} url="/apadrinhado/register" />
     </div>
   );
 };
