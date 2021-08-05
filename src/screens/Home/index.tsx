@@ -46,7 +46,7 @@ const Home: React.FC = () => {
         <Benefits />
       </section>
       <section className="Home_section Home_get-to-know-section" />
-      <section className="Home_section Home_social-proof-section" />
+      <SocialProofSection />
       <section className="Home_section Home_last-call-section">
         <LastCall />
       </section>
