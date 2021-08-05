@@ -307,7 +307,7 @@ const Footer: React.FC = () => {
           alt="logo faculdade descomplica"
           className="style__Logo-sc-1bpch4d-6 ciRon"
         />
-        <div className="style__ListRowContainer-sc-1bpch4d-4 style__ListColumnContainer-sc-1bpch4d-8 eAssRJ">
+        <div className="Footer_bottom-container-row">
           <p className="Footer_bottom-container-item">Fale com a gente</p>
           <a
             target="_blank"
