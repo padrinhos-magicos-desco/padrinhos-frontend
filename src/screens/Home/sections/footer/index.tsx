@@ -308,13 +308,10 @@ const Footer: React.FC = () => {
           className="style__Logo-sc-1bpch4d-6 ciRon"
         />
         <div className="style__ListRowContainer-sc-1bpch4d-4 style__ListColumnContainer-sc-1bpch4d-8 eAssRJ">
-          Fale com a gente
-          {/* <a target="_blank" className="style__BottomItems-sc-1bpch4d-7 bMPcOE">
-            Fale com a gente
-          </a> */}
+          <p className="Footer_bottom-container-item">Fale com a gente</p>
           <a
             target="_blank"
-            className="style__BottomItems-sc-1bpch4d-7 bMPcOE"
+            className="Footer_bottom-container-item"
             rel="noreferrer"
             href="https://descomplica.com.br/sobre/quem-somos/"
           >
@@ -322,7 +319,7 @@ const Footer: React.FC = () => {
           </a>
           <a
             target="_blank"
-            className="style__BottomItems-sc-1bpch4d-7 bMPcOE"
+            className="Footer_bottom-container-item"
             rel="noreferrer"
             href="https://descomplica.com.br/sobre/politica-de-privacidade/"
           >
@@ -330,7 +327,7 @@ const Footer: React.FC = () => {
           </a>
           <a
             target="_blank"
-            className="style__BottomItems-sc-1bpch4d-7 bMPcOE"
+            className="Footer_bottom-container-item"
             rel="noreferrer"
             href="https://descomplica.com.br/sobre/termos-de-uso/"
           >
@@ -338,7 +335,7 @@ const Footer: React.FC = () => {
           </a>
           <a
             target="_blank"
-            className="style__BottomItems-sc-1bpch4d-7 bMPcOE"
+            className="Footer_bottom-container-item"
             rel="noreferrer"
             href="https://boards.greenhouse.io/descomplica"
           >

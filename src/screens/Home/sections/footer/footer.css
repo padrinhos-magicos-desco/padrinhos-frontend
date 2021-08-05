@@ -95,3 +95,11 @@
     padding-top: 1.5rem;
     width: 100%;
 }
+
+.Footer_bottom-container-item {
+    color: #E5E6E7;
+    cursor: pointer;
+    font-size: .66rem;
+    line-height: 150%;
+    margin-left: 2rem;   
+}
