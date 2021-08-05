@@ -1,12 +1,19 @@
 import TestimonialCard from '../../components/testimonial-card';
 import Testimonials from '../../components/testimonials';
 import Input from '../../components/input';
+import Dropdown from '../../components/dropdown';
 
 import './sandbox.css';
 
 const Sandbox: React.FC = () => {
   return (
     <>
+      <div
+        style={{ display: 'flex', flexDirection: 'column', marginBottom: 40 }}
+      >
+        <Input placeholder="Nome" type="text" handleChange={() => null} />
+        <Dropdown handleChange={() => null} />
+      </div>
       <TestimonialCard
         name="Gabriel Maia"
         subtitle="Faculdade Descomplica"
@@ -46,7 +53,6 @@ const Sandbox: React.FC = () => {
           },
         ]}
       />
-      <Input placeholder="Nome" type="text" handleChange={() => null} />
     </>
   );
 };
