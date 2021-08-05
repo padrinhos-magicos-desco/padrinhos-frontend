@@ -5,7 +5,7 @@ import './home.css';
 
 const Home: React.FC = () => {
   return (
-    <>
+    <div className="Home_container">
       <section className="Home_section Home_main-section">
         <div className="Home_header">
           <Logo />
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
               caralho e vamos mudar a educação do mundo.
             </h2>
           </div>
-          <div className="Home_image" />
+          <div className="Home_image">imagem</div>
         </div>
       </section>
       <section className="Home_section Home_secondary-section" />
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
       <section className="Home_section Home_social-proof-section" />
       <section className="Home_section Home_last-call-section" />
       <section className="Home_section Home_screen-footer-section" />
-    </>
+    </div>
   );
 };
 
