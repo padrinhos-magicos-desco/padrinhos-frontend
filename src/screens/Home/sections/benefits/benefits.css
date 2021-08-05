@@ -1,0 +1,48 @@
+.Benefits_container {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  border-radius: 24px;
+
+  background-color: #00e88f;
+  padding: 20px;
+}
+
+.Benefits_title {
+  width: 30%;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+
+  letter-spacing: -1.8px;
+
+  color: #111111;
+}
+
+.Benefits_list {
+  display: flex;
+  display: row;
+  justify-content: space-between;
+
+  width: 70%;
+}
+
+.Benefits_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.Benefits_item h1 {
+  font-family: Vanguard;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 128px;
+  line-height: 112px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
