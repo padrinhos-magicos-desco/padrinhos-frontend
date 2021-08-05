@@ -13,7 +13,7 @@ const Home: React.FC = () => {
       <MainSection />
       <HowItWorksSection />
       <BenefitsSection />
-      <section className="Home_section Home_get-to-know-section" />
+      <GetToKnowSection />
       <SocialProofSection />
       <LastCallSection />
       <section className="Home_section Home_screen-footer-section" />
