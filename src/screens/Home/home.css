@@ -19,6 +19,19 @@
   background-color: #000;
 }
 
+.Home_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 20px 60px;
+}
+
+.Home_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .Home_content {
   display: flex;
   flex-direction: row;
@@ -33,13 +46,12 @@
 }
 
 .Home_image {
-
 }
 
 .Home_h1 {
   font-family: Vanguard;
   font-size: 120px;
-  color: #00E88F;
+  color: #00e88f;
   font-weight: bold;
   font-size: 120px;
   line-height: 90%;

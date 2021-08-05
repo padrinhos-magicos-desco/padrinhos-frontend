@@ -7,23 +7,21 @@ const Home: React.FC = () => {
   return (
     <div className="Home_container">
       <section className="Home_section Home_main-section">
-        <nav className="Home_nav">
+        <div className="Home_header">
           <Logo />
-          <ul className="Home_nav-list">
+          <nav className="Home_buttons">
             <Button
               buttonText="Quero participar"
               buttonColor="#00e88f"
               buttonTextColor="#000"
             />
-            <li>
-              <Button
-                buttonText="Entrar"
-                buttonColor="#000"
-                buttonTextColor="#fff"
-              />
-            </li>
-          </ul>
-        </nav>
+            <Button
+              buttonText="Entrar"
+              buttonColor="#000"
+              buttonTextColor="#fff"
+            />
+          </nav>
+        </div>
         <div className="Home_content">
           <div className="Home_main-text">
             <h1 className="Home_h1">PADRINHOS MÁGICOS ATIVAR!</h1>
