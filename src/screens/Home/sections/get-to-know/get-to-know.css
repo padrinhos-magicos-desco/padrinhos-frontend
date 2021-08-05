@@ -1,0 +1,79 @@
+.GetToKnow_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 77px 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .GetToKnow_container {
+    display: flex;
+    justify-content: unset;
+    flex-direction: column;
+  }
+
+  .GetToKnow_player {
+    margin-top: 24px;
+  }
+}
+
+.GetToKnow_column-1 {
+  width: 368px;
+}
+
+.GetToKnow_title {
+  font-family: Vanguard;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #00E88F;
+}
+
+.GetToKnow_subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+
+  letter-spacing: -0.6px;
+  margin-top: 30px;
+  
+  color: #FFFFFF;
+}
+
+.GetToKnow_player {
+  width: 627px;
+  height: 351px;
+
+  border-radius: 24px;
+
+  background-size: 627px;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("https://i.ibb.co/1Jxv0j5/player.png");
+}
+
+.GetToKnow_background {
+  width: 627px;
+  height: 351px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GetToKnow_background:hover {
+  width: 627px;
+  height: 351px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 24px;
+}
+
+.GetToKnow_background svg {
+  display: none;
+}
+
+.GetToKnow_background:hover svg {
+  display: block;
+}
