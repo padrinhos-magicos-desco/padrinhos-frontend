@@ -1,4 +1,9 @@
 import TestimonialCard from '../../../../components/testimonial-card';
+import LogoExame from '../../../../components/logo-exame';
+import LogoFast from '../../../../components/logo-fast';
+import LogoFolha from '../../../../components/logo-folha';
+import LogoForbes from '../../../../components/logo-forbes';
+import LogoVeja from '../../../../components/logo-veja';
 import './social-proof.css';
 
 const SocialProof: React.FC = () => {
@@ -26,6 +31,19 @@ const SocialProof: React.FC = () => {
           testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
           image="/pessoa3.png"
         />
+      </div>
+      <div className="SocialProof_companies">
+        <p>
+          ”Umas das empresas mais inovadoras da América Latina por levar
+          educação online para massas.”
+        </p>
+        <div className="SocialProof_companiesList">
+          <LogoFast />
+          <LogoForbes />
+          <LogoExame />
+          <LogoVeja />
+          <LogoFolha />
+        </div>
       </div>
     </section>
   );

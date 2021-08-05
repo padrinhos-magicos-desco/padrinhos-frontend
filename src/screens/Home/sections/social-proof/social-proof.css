@@ -16,7 +16,7 @@
   line-height: 44px;
   text-align: center;
   letter-spacing: -1.6px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   margin-bottom: 56px;
 }
@@ -32,4 +32,39 @@
 
 .SocialProof_testimonials .Testimonials-card_container:last-child {
   margin-right: 0;
+}
+
+.SocialProof_companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 80px;
+}
+
+.SocialProof_companies p {
+  width: 686px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  margin-bottom: 30pxs;
+}
+
+.SocialProof_companiesList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 1160px;
 }
