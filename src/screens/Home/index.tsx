@@ -21,6 +21,7 @@ const Home: React.FC = () => {
               buttonColor="#000"
               borderColor="#fff"
               buttonTextColor="#fff"
+              useBorder
             />
           </nav>
         </div>
