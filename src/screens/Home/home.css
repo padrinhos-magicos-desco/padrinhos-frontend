@@ -11,16 +11,29 @@
   background-color: #000;
 }
 
+.Home_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 20px 60px;
+}
+
+.Home_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .Home_content {
   display: flex;
   flex-direction: row;
 }
 
 .Home_h1 {
-  color: #FFF;
+  color: #fff;
   width: 60vw;
 }
 
 .Home_h2 {
-  color: #FFF;
+  color: #fff;
 }
