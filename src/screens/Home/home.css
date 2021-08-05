@@ -68,6 +68,11 @@
   justify-content: center;
 }
 
+.Home_last-call-section {
+  display: flex;
+  justify-content: center;
+}
+
 .Home_h1 {
   font-family: Vanguard;
   font-size: 120px;

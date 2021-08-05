@@ -1,6 +1,7 @@
 import Logo from '../../components/logo';
 import Button from '../../components/button';
 import Benefits from './sections/benefits';
+import LastCall from './sections/last-call';
 
 import HowItWorksSection from './sections/how-it-works/how-it-works';
 import SocialProofSection from './sections/social-proof';
@@ -47,7 +48,9 @@ const Home: React.FC = () => {
       </section>
       <section className="Home_section Home_get-to-know-section" />
       <SocialProofSection />
-      <section className="Home_section Home_last-call-section" />
+      <section className="Home_section Home_last-call-section">
+        <LastCall />
+      </section>
       <section className="Home_section Home_screen-footer-section" />
     </div>
   );
