@@ -1,4 +1,6 @@
 .input {
+  width: 328px;
+  height: 64px;
   color: #111111;
   border: 1px solid rgba(0, 0, 0, 0.25);
   text-overflow: ellipsis;
