@@ -6,6 +6,8 @@
   padding: 0 25px;
   border-radius: 56px;
   border-style: solid;
+
+  cursor: pointer;
 }
 
 .Button_container a {
