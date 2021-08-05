@@ -1,17 +1,20 @@
 import Button from '../../../../components/button';
 import Logo from '../../../../components/logo';
 
+import './main.css';
+
 const MainSection: React.FC = () => {
   return (
-    <section className="Home_section Home_main-section">
-      <div className="Home_header">
+    <section className="Main_section">
+      <div className="Main_header">
         <Logo />
-        <nav className="Home_buttons">
+        <nav className="Main_buttons">
           <Button
             buttonText="Quero participar"
             buttonColor="#00e88f"
             borderColor="#00e88f"
             buttonTextColor="#000"
+            url="/screen/100"
           />
           <Button
             buttonText="Entrar"
@@ -19,19 +22,20 @@ const MainSection: React.FC = () => {
             borderColor="#fff"
             buttonTextColor="#fff"
             useBorder
+            url="/screen/100"
           />
         </nav>
       </div>
-      <div className="Home_content">
-        <div className="Home_main-text">
-          <h1 className="Home_h1">PADRINHOS MÁGICOS ATIVAR!</h1>
-          <h2 className="Home_h2">
+      <div className="Main_content">
+        <div className="Main_main-text">
+          <h1 className="Main_h1">PADRINHOS MÁGICOS ATIVAR!</h1>
+          <h2 className="Main_h2">
             Um subtítulo que contextualize o rolê do apadrinhamento e como isso
             é importante para a educação. Que somos uma empresa foda pra caralho
             e vamos mudar a educação do mundo.
           </h2>
         </div>
-        <div className="Home_image">imagem</div>
+        <img alt="" className="Main_image" src="/main-people.png" />
       </div>
     </section>
   );

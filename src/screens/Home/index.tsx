@@ -3,6 +3,7 @@ import LastCallSection from './sections/last-call';
 import HowItWorksSection from './sections/how-it-works/how-it-works';
 import SocialProofSection from './sections/social-proof';
 import GetToKnowSection from './sections/get-to-know';
+import Footer from './sections/footer';
 
 import './home.css';
 import MainSection from './sections/main/main';
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
       <GetToKnowSection />
       <SocialProofSection />
       <LastCallSection />
-      <section className="Home_section Home_screen-footer-section" />
+      <Footer />
     </div>
   );
 };
