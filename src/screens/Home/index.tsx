@@ -17,6 +17,7 @@ const Home: React.FC = () => {
       <GetToKnowSection />
       <SocialProofSection />
       <LastCallSection />
+      <Footer />
     </div>
   );
 };
