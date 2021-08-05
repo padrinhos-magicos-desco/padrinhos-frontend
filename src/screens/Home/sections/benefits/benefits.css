@@ -10,8 +10,8 @@
 }
 
 .Benefits_title {
-  width: 35%;
-  margin: 60px 35px;
+  width: 30%;
+  margin: 60px 40px;
 
   font-style: normal;
   font-weight: bold;
@@ -27,7 +27,6 @@
   display: flex;
   display: row;
   justify-content: space-between;
-
   margin: 30px;
 }
 
