@@ -1,6 +1,6 @@
 import BasePerson from './base-person';
 
-class Sponsor extends BasePerson {
+export class Sponsor extends BasePerson {
   public Address: string | undefined;
 
   public Type: SponsorType | undefined;
@@ -10,9 +10,7 @@ class Sponsor extends BasePerson {
   public Investment: Map<string, number> | undefined;
 }
 
-enum SponsorType {
+export enum SponsorType {
   Person,
   Company,
 }
-
-export { Sponsor, SponsorType };

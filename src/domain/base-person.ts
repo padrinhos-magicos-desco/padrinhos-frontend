@@ -1,4 +1,4 @@
-class BasePerson {
+export default class BasePerson {
   public Id: number | undefined;
 
   public FullName: string | undefined;
@@ -9,5 +9,3 @@ class BasePerson {
 
   public IncomeRange: string | undefined;
 }
-
-export default BasePerson;
