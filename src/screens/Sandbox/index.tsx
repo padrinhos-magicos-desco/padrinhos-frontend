@@ -1,5 +1,6 @@
 import TestimonialCard from '../../components/testimonial-card';
 import Testimonials from '../../components/testimonials';
+import Input from '../../components/input';
 
 import './sandbox.css';
 
@@ -45,6 +46,7 @@ const Sandbox: React.FC = () => {
           },
         ]}
       />
+      <Input placeholder="Nome" type="text" handleChange={() => null} />
     </>
   );
 };
