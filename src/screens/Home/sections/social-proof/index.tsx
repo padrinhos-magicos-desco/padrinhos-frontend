@@ -42,19 +42,22 @@ const SocialProof: React.FC = () => {
       </div>
       <div className="SocialProof_testimonials">
         <TestimonialCard
-          name="Nome do Apadrinhado"
+          name="João Souza"
           subtitle="Faculdade Descomplica"
           testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+          image="/pessoa2.png"
         />
         <TestimonialCard
-          name="Padrinho"
+          name="Márcia Silva"
           subtitle="Pós Graduação Descomplica"
           testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+          image="/pessoa1.png"
         />
         <TestimonialCard
-          name="Padrinho CEO Empresa"
+          name="Marco"
           subtitle="Faculdade Descomplica"
           testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+          image="/pessoa3.png"
         />
       </div>
     </section>
