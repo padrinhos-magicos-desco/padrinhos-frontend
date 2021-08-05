@@ -10,3 +10,17 @@
 .Home_main-section {
   background-color: #000;
 }
+
+.Home_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.Home_h1 {
+  color: #FFF;
+  width: 60vw;
+}
+
+.Home_h2 {
+  color: #FFF;
+}
