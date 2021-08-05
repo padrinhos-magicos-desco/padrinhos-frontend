@@ -1,8 +1,16 @@
-.App {
-  text-align: center;
+.Home_nav {
+  padding: 25px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home_nav-list {
+  display: flex;
 }
 
 .Home_section {
+  padding: 0px 60px;
   height: 100vh;
   width: 100vw;
 }
@@ -16,11 +24,31 @@
   flex-direction: row;
 }
 
+.Home_main-text {
+  max-width: 60vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Home_image {
+
+}
+
 .Home_h1 {
-  color: #FFF;
-  width: 60vw;
+  font-family: Vanguard;
+  font-size: 120px;
+  color: #00E88F;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 90%;
+  text-transform: uppercase;
 }
 
 .Home_h2 {
-  color: #FFF;
+  width: 382px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
 }
