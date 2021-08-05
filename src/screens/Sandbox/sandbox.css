@@ -10,3 +10,14 @@
 .home-screen-main {
   background-color: #000;
 }
+
+.Sandbox_p {
+  padding: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2.4px;
+
+  color: #111111;
+}
