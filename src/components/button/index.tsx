@@ -8,6 +8,7 @@ type Props = {
   buttonTextColor?: string;
   borderColor?: string;
   useBorder?: boolean;
+  url: string;
 };
 
 const Button: React.FC<Props> = ({
@@ -16,6 +17,7 @@ const Button: React.FC<Props> = ({
   buttonTextColor,
   borderColor,
   useBorder,
+  url,
 }: Props) => {
   return (
     <div
@@ -26,7 +28,7 @@ const Button: React.FC<Props> = ({
         borderWidth: useBorder ? '1.5px' : '0px',
       }}
     >
-      <Link to="/screen/100">
+      <Link to={url}>
         <p style={{ color: buttonTextColor }}>{buttonText}</p>
       </Link>
     </div>

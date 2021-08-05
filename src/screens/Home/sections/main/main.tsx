@@ -12,6 +12,7 @@ const MainSection: React.FC = () => {
             buttonColor="#00e88f"
             borderColor="#00e88f"
             buttonTextColor="#000"
+            url="/screen/100"
           />
           <Button
             buttonText="Entrar"
@@ -19,6 +20,7 @@ const MainSection: React.FC = () => {
             borderColor="#fff"
             buttonTextColor="#fff"
             useBorder
+            url="/screen/100"
           />
         </nav>
       </div>
