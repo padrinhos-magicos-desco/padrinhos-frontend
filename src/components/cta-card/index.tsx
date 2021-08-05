@@ -21,8 +21,8 @@ const CTACard: React.FC<Props> = ({
 }: Props) => {
   return (
     <div className="CTACard_container">
-      <h1 className="CTACard_title">{title}</h1>
-      <h2 className="CTACard_subtitle">{subtitle}</h2>
+      <h2 className="CTACard_title">{title}</h2>
+      <p className="CTACard_subtitle">{subtitle}</p>
       <div className="CTACard_topics">
         {topics.map((topic) => (
           <>
