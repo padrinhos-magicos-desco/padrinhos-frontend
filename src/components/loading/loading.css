@@ -1,4 +1,4 @@
-.overlay-content {
+.Loading_overlay-content {
   display: flex;
   width: 100%;
   left: 0;
@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-.overlay-content .wrapper {
+.Loading_overlay-content .Loading_wrapper {
   display: inherit;
   width: 100%;
   height: 100%;

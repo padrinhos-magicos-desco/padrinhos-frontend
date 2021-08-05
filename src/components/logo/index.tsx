@@ -1,5 +1,3 @@
-import './logo.css';
-
 const Logo: React.FC = () => {
   return (
     <svg

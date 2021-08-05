@@ -8,8 +8,8 @@ type Props = {
 
 const Loading: React.FC<Props> = ({ loading }: Props) => {
   return loading ? (
-    <div className="overlay-content">
-      <div className="wrapper">
+    <div className="Loading_overlay-content">
+      <div className="Loading_wrapper">
         <Spinner name="circle" fadeIn="none" color="green" />
       </div>
     </div>
