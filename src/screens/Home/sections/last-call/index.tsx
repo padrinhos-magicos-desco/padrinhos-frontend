@@ -2,14 +2,9 @@ import Button from '../../../../components/button';
 
 import './last-call.css';
 
-const FALLBACK_IMAGE = '/last-call.png';
-
 const LastCall: React.FC = () => {
   return (
-    <div
-      className="LastCall_container"
-      style={{ backgroundImage: FALLBACK_IMAGE }}
-    >
+    <div className="LastCall_container">
       <h1>
         Um título bem chamativo de last call. Não pode perder essa oportunidade
       </h1>

@@ -5,7 +5,9 @@
   justify-content: center;
 
   width: 1162px;
-  height: 530px;
+  height: 520px;
+
+  background-image: url("https://i.ibb.co/4MSKZ2p/last-call.png");
 }
 
 .LastCall_container h1 {
