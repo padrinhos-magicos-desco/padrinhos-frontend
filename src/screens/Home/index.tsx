@@ -11,14 +11,10 @@ const Home: React.FC = () => {
     <div className="Home_container">
       <MainSection />
       <HowItWorksSection />
-      <section className="Home_section Home_benefits-section">
-        <BenefitsSection />
-      </section>
+      <BenefitsSection />
       <section className="Home_section Home_get-to-know-section" />
       <SocialProofSection />
-      <section className="Home_section Home_last-call-section">
-        <LastCallSection />
-      </section>
+      <LastCallSection />
       <section className="Home_section Home_screen-footer-section" />
     </div>
   );
