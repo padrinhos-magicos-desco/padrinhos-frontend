@@ -5,6 +5,7 @@ import LoadingContext from '../../contexts/loading';
 import Loading from '../../components/loading';
 import { getData } from '../../gateways/api';
 import Logo from '../../components/logo/logo';
+import Button from '../../components/button/button';
 
 import './home.css';
 
@@ -31,11 +32,17 @@ const Home: React.FC = () => {
         <nav>
           <Logo />
           <ul>
+            <Button
+              buttonText="Quero participar"
+              buttonColor="#00e88f"
+              buttonTextColor="#000"
+            />
             <li>
-              <Link to="/">Padrinho</Link>
-            </li>
-            <li>
-              <Link to="/screen/100">Apadrinhado</Link>
+              <Button
+                buttonText="Entrar"
+                buttonColor="#000"
+                buttonTextColor="#fff"
+              />
             </li>
           </ul>
         </nav>
