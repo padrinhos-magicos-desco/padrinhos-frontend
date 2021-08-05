@@ -1,0 +1,23 @@
+.SocialProof_container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #191a1a;
+
+  width: 100%;
+  padding: 20px;
+}
+
+.SocialProof_title {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -1.6px;
+  color: #FFFFFF;
+
+  margin-bottom: 56px;
+}
