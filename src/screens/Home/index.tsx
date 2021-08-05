@@ -1,8 +1,3 @@
-import { Link } from 'react-router-dom';
-
-import LoadingContext from '../../contexts/loading';
-import Loading from '../../components/loading';
-import { getData } from '../../gateways/api';
 import Logo from '../../components/logo';
 import Button from '../../components/button';
 
