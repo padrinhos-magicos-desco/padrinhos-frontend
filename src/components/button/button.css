@@ -1,0 +1,21 @@
+.Button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  border: none;
+  border-radius: 20px;
+
+  padding: 0 25px;
+}
+
+.Button_container a {
+  text-decoration: none;
+}
+
+.Button_container p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+}
