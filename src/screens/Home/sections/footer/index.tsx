@@ -15,6 +15,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               href="https://descomplica.com.br/faculdade/educacao/"
               rel="noreferrer"
+              tabIndex={0}
             >
               Educação
             </a>
@@ -23,6 +24,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/engenharia/"
+              tabIndex={0}
             >
               Engenharia
             </a>
@@ -31,6 +33,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/gestao/"
+              tabIndex={0}
             >
               Gestão
             </a>
@@ -39,6 +42,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-2"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/tecnologia/"
+              tabIndex={0}
             >
               Tecnologia
             </a>
@@ -50,6 +54,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/diferenciais/"
+              tabIndex={0}
             >
               Diferenciais
             </a>
@@ -58,6 +63,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/inscricoes/"
+              tabIndex={0}
             >
               Inscrições
             </a>
@@ -66,6 +72,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/transferencia/"
+              tabIndex={0}
             >
               Transferência
             </a>
@@ -74,6 +81,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/segunda-graduacao/"
+              tabIndex={0}
             >
               Segunda graduação
             </a>
@@ -85,6 +93,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://accounts.descomplica.com.br/?returnUrl=https://aulas.descomplica.com.br/"
+              tabIndex={0}
             >
               Já sou aluno
             </a>
@@ -93,6 +102,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/manual-do-aluno/"
+              tabIndex={0}
             >
               Manual do Aluno
             </a>
@@ -101,6 +111,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/edital/"
+              tabIndex={0}
             >
               Edital Vestibular 2021
             </a>
@@ -109,6 +120,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/regimento-geral"
+              tabIndex={0}
             >
               Regimento Geral
             </a>
@@ -120,6 +132,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-1"
               rel="noreferrer"
               href="https://api.whatsapp.com/send/?phone=5511980196658&text=Ola,+Preciso+tirar+uma+d%C3%BAvida+sobre+a+Faculdade+Descomplica&app_absent=0"
+              tabIndex={0}
             >
               Whatsapp
             </a>
@@ -128,7 +141,6 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="Footer_row">
-        {/* <a className="Footer_container-column-title" /> */}
         <div className="Footer_container-social">
           <div className="Footer_container-column-type-2">
             <p className="Footer_container-column-title">
@@ -139,6 +151,8 @@ const Footer: React.FC = () => {
                 href="https://www.facebook.com/faculdadedescomplica"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Siga nossa Faculdade no Facebook"
               >
                 <img
                   src="https://flowpress-staging.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/15165913/icone-facebook-branco.svg"
@@ -150,6 +164,8 @@ const Footer: React.FC = () => {
                 href="https://twitter.com/faculdesco"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Siga nossa Faculdade no Twitter"
               >
                 <img
                   src="https://flowpress-staging.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/15165916/icone-twitter-branco.svg"
@@ -161,6 +177,8 @@ const Footer: React.FC = () => {
                 href="https://www.instagram.com/faculdadedescomplica/"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Siga nossa Faculdade no Instagram"
               >
                 <img
                   src="https://flowpress-staging.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/15165914/icone-instagram-branco.svg"
@@ -172,6 +190,8 @@ const Footer: React.FC = () => {
                 href="https://www.youtube.com/channel/UC911DweZpoXAm3y4GaqUyLA"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Siga nossa Faculdade no Youtube"
               >
                 <img
                   src="https://flowpress-staging.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/15165917/icone-youtube-branco.svg"
@@ -188,6 +208,8 @@ const Footer: React.FC = () => {
                 href="https://play.google.com/store/apps/details?id=br.com.descomplica.vod&amp;hl=pt_BR"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Baixe nosso App para Android"
               >
                 <img
                   src="https://flowpress-production.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/06/28194051/google-play-store.svg"
@@ -199,6 +221,8 @@ const Footer: React.FC = () => {
                 href="https://apps.apple.com/br/app/descomplica-foco-no-enem-2016/id1068977518"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Baixe nosso App para iOS"
               >
                 <img
                   src="https://flowpress-production.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/06/28194052/app-store.svg"
@@ -222,6 +246,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-2"
               rel="noreferrer"
               href="https://descomplica.com.br/pos-graduacao/"
+              tabIndex={0}
             >
               Ver nossos cursos de Pós-Graduação
             </a>
@@ -233,6 +258,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-2"
               rel="noreferrer"
               href="https://cursos-livres.descomplica.com.br/"
+              tabIndex={0}
             >
               Ver nossos cursos livres
             </a>
@@ -246,6 +272,7 @@ const Footer: React.FC = () => {
               className="Footer_items-link-type-2"
               rel="noreferrer"
               href="https://descomplica.com.br/para-empresas/"
+              tabIndex={0}
             >
               Descomplica para Empresas
             </a>
@@ -257,6 +284,8 @@ const Footer: React.FC = () => {
                 href="https://www.facebook.com/descomplica.pos/"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Siga nossa Pós no Facebook"
               >
                 <img
                   src="https://flowpress-staging.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/15165913/icone-facebook-branco.svg"
@@ -268,6 +297,8 @@ const Footer: React.FC = () => {
                 href="https://twitter.com/descomplicapos/"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Siga nossa Pós no Twitter"
               >
                 <img
                   src="https://flowpress-staging.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/15165916/icone-twitter-branco.svg"
@@ -279,6 +310,8 @@ const Footer: React.FC = () => {
                 href="https://www.instagram.com/descomplica.pos/"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Siga nossa Pós no Instagram"
               >
                 <img
                   src="https://flowpress-staging.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/15165914/icone-instagram-branco.svg"
@@ -290,6 +323,8 @@ const Footer: React.FC = () => {
                 href="https://www.youtube.com/channel/UC911DweZpoXAm3y4GaqUyLA"
                 target="_self"
                 rel="noreferrer"
+                tabIndex={0}
+                aria-label="Siga nossa pós no Youtube"
               >
                 <img
                   src="https://flowpress-staging.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/15165917/icone-youtube-branco.svg"
@@ -314,6 +349,7 @@ const Footer: React.FC = () => {
             className="Footer_bottom-container-item"
             rel="noreferrer"
             href="https://descomplica.com.br/sobre/quem-somos/"
+            tabIndex={0}
           >
             Quem somos
           </a>
@@ -322,6 +358,7 @@ const Footer: React.FC = () => {
             className="Footer_bottom-container-item"
             rel="noreferrer"
             href="https://descomplica.com.br/sobre/politica-de-privacidade/"
+            tabIndex={0}
           >
             Política de Privacidade
           </a>
@@ -330,6 +367,7 @@ const Footer: React.FC = () => {
             className="Footer_bottom-container-item"
             rel="noreferrer"
             href="https://descomplica.com.br/sobre/termos-de-uso/"
+            tabIndex={0}
           >
             Termos de Uso
           </a>
@@ -338,6 +376,7 @@ const Footer: React.FC = () => {
             className="Footer_bottom-container-item"
             rel="noreferrer"
             href="https://boards.greenhouse.io/descomplica"
+            tabIndex={0}
           >
             Trabalhe conosco
           </a>
