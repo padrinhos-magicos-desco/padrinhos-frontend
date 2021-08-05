@@ -1,0 +1,12 @@
+.Testimonials_container .slick-list {
+  padding: 20px;
+  padding-left: 46px;
+}
+
+.Testimonials_container .slick-slide.slick-active {
+  width: 435px !important;
+}
+
+.Testimonials_container .slick-arrow {
+  display: none !important;
+}
