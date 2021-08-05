@@ -6,6 +6,10 @@
   margin: auto;
 }
 
+.Home_container section {
+  padding-bottom: 80px;
+}
+
 .Home_nav {
   padding-top: 25px;
   width: 100%;
@@ -24,9 +28,6 @@
   box-sizing: border-box;
 
   padding: 0 60px;
-}
-
-.Home_main-section {
 }
 
 .Home_header {

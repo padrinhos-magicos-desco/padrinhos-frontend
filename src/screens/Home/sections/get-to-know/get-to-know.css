@@ -1,7 +1,7 @@
 .GetToKnow_container {
   display: flex;
   justify-content: space-between;
-  padding: 77px 60px;
+  padding: 0 60px;
 
   width: 100%;
   background-color: #191a1a;
