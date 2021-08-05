@@ -1,5 +1,6 @@
 import Logo from '../../components/logo';
 import Button from '../../components/button';
+import Benefits from './sections/benefits';
 
 import './home.css';
 
@@ -37,7 +38,9 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="Home_section Home_secondary-section" />
-      <section className="Home_section Home_benefits-section" />
+      <section className="Home_section Home_benefits-section">
+        <Benefits />
+      </section>
       <section className="Home_section Home_get-to-know-section" />
       <section className="Home_section Home_social-proof-section" />
       <section className="Home_section Home_last-call-section" />
