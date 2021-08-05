@@ -21,3 +21,16 @@
 
   margin-bottom: 56px;
 }
+
+.SocialProof_testimonials {
+  display: flex;
+  justify-content: center;
+}
+
+.SocialProof_testimonials .Testimonials-card_container {
+  margin-right: 60px;
+}
+
+.SocialProof_testimonials .Testimonials-card_container:last-child {
+  margin-right: 0;
+}

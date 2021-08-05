@@ -1,4 +1,4 @@
-import Testimonials from '../../../../components/testimonials';
+import TestimonialCard from '../../../../components/testimonial-card';
 import './social-proof.css';
 
 const mockedTestimonials = [
@@ -40,7 +40,23 @@ const SocialProof: React.FC = () => {
       <div className="SocialProof_title">
         Depoimentos dos nossos apadrinhados:
       </div>
-      <Testimonials testimonialList={mockedTestimonials} />
+      <div className="SocialProof_testimonials">
+        <TestimonialCard
+          name="Nome do Apadrinhado"
+          subtitle="Faculdade Descomplica"
+          testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+        />
+        <TestimonialCard
+          name="Padrinho"
+          subtitle="Pós Graduação Descomplica"
+          testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+        />
+        <TestimonialCard
+          name="Padrinho CEO Empresa"
+          subtitle="Faculdade Descomplica"
+          testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+        />
+      </div>
     </section>
   );
 };
