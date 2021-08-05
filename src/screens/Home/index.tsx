@@ -16,7 +16,6 @@ const Home: React.FC = () => {
       <GetToKnowSection />
       <SocialProofSection />
       <LastCallSection />
-      <section className="Home_section Home_screen-footer-section" />
     </div>
   );
 };
