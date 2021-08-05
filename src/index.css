@@ -14,8 +14,14 @@ body {
 
 @font-face {
   font-family: Aprova;
-  src: url(./fonts/Aprova-Bold.otf);
+  src: url(./fonts/Aprova-Black.otf);
   font-weight: bold;
+}
+
+@font-face {
+  font-family: Aprova;
+  src: url(./fonts/Aprova-Bold.otf);
+  font-weight: 600;
 }
 
 @font-face {
