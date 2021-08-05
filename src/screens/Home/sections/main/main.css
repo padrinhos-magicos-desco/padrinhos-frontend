@@ -41,6 +41,7 @@
 .Main_content {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .Main_main-text {
@@ -48,7 +49,7 @@
   height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .Main_image {
@@ -65,6 +66,7 @@
   font-size: 120px;
   line-height: 90%;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .Main_h2 {
