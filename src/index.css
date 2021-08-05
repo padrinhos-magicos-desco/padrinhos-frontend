@@ -7,9 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: Aprova;
+  src: url(./fonts/Aprova-Regular.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Aprova;
 }
 
 code {
