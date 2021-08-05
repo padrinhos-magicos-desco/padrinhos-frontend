@@ -4,7 +4,7 @@ const Benefits: React.FC = () => {
   return (
     <div className="Benefits_container">
       <div className="Benefits_title">
-        Como a gente pode impactar a vida e cenário brasileiro?
+        Como a gente pode <u>impactar a vida e cenário</u> brasileiro?
       </div>
       <div className="Benefits_list">
         <div className="Benefits_item">

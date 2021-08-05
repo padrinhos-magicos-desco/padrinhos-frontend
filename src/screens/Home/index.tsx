@@ -1,5 +1,6 @@
 import Logo from '../../components/logo';
 import Button from '../../components/button';
+import Benefits from './sections/benefits';
 
 import SocialProofSection from './sections/social-proof';
 
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
               buttonColor="#000"
               borderColor="#fff"
               buttonTextColor="#fff"
+              useBorder
             />
           </nav>
         </div>
@@ -39,7 +41,9 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="Home_section Home_secondary-section" />
-      <section className="Home_section Home_benefits-section" />
+      <section className="Home_section Home_benefits-section">
+        <Benefits />
+      </section>
       <section className="Home_section Home_get-to-know-section" />
       <SocialProofSection />
       <section className="Home_section Home_last-call-section" />

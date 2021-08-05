@@ -7,6 +7,7 @@ type Props = {
   buttonText: string;
   buttonTextColor?: string;
   borderColor?: string;
+  useBorder?: boolean;
 };
 
 const Button: React.FC<Props> = ({
@@ -14,11 +15,16 @@ const Button: React.FC<Props> = ({
   buttonText,
   buttonTextColor,
   borderColor,
+  useBorder,
 }: Props) => {
   return (
     <div
       className="Button_container"
-      style={{ backgroundColor: buttonColor, borderColor }}
+      style={{
+        backgroundColor: buttonColor,
+        borderColor,
+        borderWidth: useBorder ? '1.5px' : '0px',
+      }}
     >
       <Link to="/screen/100">
         <p style={{ color: buttonTextColor }}>{buttonText}</p>
@@ -31,6 +37,7 @@ Button.defaultProps = {
   buttonColor: '#00e88f',
   buttonTextColor: '#111111',
   borderColor: 'none',
+  useBorder: false,
 };
 
 export default Button;
