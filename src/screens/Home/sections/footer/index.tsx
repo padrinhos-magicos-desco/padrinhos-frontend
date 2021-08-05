@@ -4,14 +4,12 @@ const Footer: React.FC = () => {
   return (
     <footer id="FooterUnified">
       <div className="Footer_row">
-        {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">Graduação</a> */}
-        Graduação
+        <p className="Footer_container-column-title">Graduação</p>
         <div className="Footer_container-graduacao">
           <div className="Footer_container-column-type-1">
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">
+            <p className="Footer_container-column-title">
               Áreas do conhecimento
-            </a> */}
-            Áreas do conhecimento
+            </p>
             <a
               target="_blank"
               className="Footer_items-link-type-1"
@@ -38,7 +36,7 @@ const Footer: React.FC = () => {
             </a>
             <a
               target="_blank"
-              className="style__ListItems-sc-1bpch4d-3 kQlgzZ"
+              className="Footer_items-link-type-2"
               rel="noreferrer"
               href="https://descomplica.com.br/faculdade/tecnologia/"
             >
@@ -46,10 +44,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <div className="Footer_container-column-type-1">
-            Sobre a Faculdade
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">
-              Sobre a Faculdade
-            </a> */}
+            <p className="Footer_container-column-title">Sobre a Faculdade</p>
             <a
               target="_blank"
               className="Footer_items-link-type-1"
@@ -84,8 +79,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <div className="Footer_container-column-type-1">
-            Portal do Aluno
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">Portal do Aluno</a> */}
+            <p className="Footer_container-column-title">Portal do Aluno</p>
             <a
               target="_blank"
               className="Footer_items-link-type-1"
@@ -120,8 +114,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <div className="Footer_container-column-type-1">
-            Fale com a gente
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">Fale com a gente</a> */}
+            <p className="Footer_container-column-title">Fale com a gente</p>
             <a
               target="_blank"
               className="Footer_items-link-type-1"
@@ -130,20 +123,18 @@ const Footer: React.FC = () => {
             >
               Whatsapp
             </a>
-            Chat online
-            {/* <a className="Footer_items-link-type-1">Chat online</a> */}
+            <p className="Footer_items-link-type-1">Chat online</p>
           </div>
         </div>
       </div>
       <div className="Footer_row">
-        {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf" /> */}
+        {/* <a className="Footer_container-column-title" /> */}
         <div className="Footer_container-social">
           <div className="Footer_container-column-type-2">
-            Siga nossa Faculdade
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">
+            <p className="Footer_container-column-title">
               Siga nossa Faculdade
-            </a> */}
-            <div className="style__ListRowContainer-sc-1bpch4d-4 gzygZ">
+            </p>
+            <div className="Footer_container-row">
               <a
                 href="https://www.facebook.com/faculdadedescomplica"
                 target="_self"
@@ -191,9 +182,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className="Footer_container-column-type-1">
-            Baixe nosso App
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">Baixe nosso App</a> */}
-            <div className="style__ListRowContainer-sc-1bpch4d-4 gzygZ">
+            <p className="Footer_container-column-title">Baixe nosso App</p>
+            <div className="Footer_container-row">
               <a
                 href="https://play.google.com/store/apps/details?id=br.com.descomplica.vod&amp;hl=pt_BR"
                 target="_self"
@@ -201,7 +191,7 @@ const Footer: React.FC = () => {
               >
                 <img
                   src="https://flowpress-production.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/06/28194051/google-play-store.svg"
-                  className="style__Image-sc-1bpch4d-9 cqCebT storeLogo"
+                  className="Footer_img-store"
                   alt="Google Play Store"
                 />
               </a>
@@ -212,7 +202,7 @@ const Footer: React.FC = () => {
               >
                 <img
                   src="https://flowpress-production.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/06/28194052/app-store.svg"
-                  className="style__Image-sc-1bpch4d-9 cqCebT storeLogo"
+                  className="Footer_img-store"
                   alt="App Store"
                 />
               </a>
@@ -221,17 +211,15 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="Footer_row">
-        Mais da Faculdade Descomplica
-        {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">
+        <p className="Footer_container-column-title">
           Mais da Faculdade Descomplica
-        </a> */}
+        </p>
         <div className="Footer_container-mais-faculdade">
           <div className="Footer_container-column-type-1">
-            Pós-Graduação
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">Pós-Graduação</a> */}
+            <p className="Footer_container-column-title">Pós-Graduação</p>
             <a
               target="_blank"
-              className="style__ListItems-sc-1bpch4d-3 kQlgzZ"
+              className="Footer_items-link-type-2"
               rel="noreferrer"
               href="https://descomplica.com.br/pos-graduacao/"
             >
@@ -239,11 +227,10 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <div className="Footer_container-column-type-1">
-            Cursos Livres
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">Cursos Livres</a> */}
+            <p className="Footer_container-column-title">Cursos Livres</p>
             <a
               target="_blank"
-              className="style__ListItems-sc-1bpch4d-3 kQlgzZ"
+              className="Footer_items-link-type-2"
               rel="noreferrer"
               href="https://cursos-livres.descomplica.com.br/"
             >
@@ -251,13 +238,12 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <div className="Footer_container-column-type-1">
-            Soluções para Empresas
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">
+            <p className="Footer_container-column-title">
               Soluções para Empresas
-            </a> */}
+            </p>
             <a
               target="_blank"
-              className="style__ListItems-sc-1bpch4d-3 kQlgzZ"
+              className="Footer_items-link-type-2"
               rel="noreferrer"
               href="https://descomplica.com.br/para-empresas/"
             >
@@ -265,9 +251,8 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <div className="Footer_container-column-type-1">
-            Siga nossa Pós
-            {/* <a className="style__Title-sc-1bpch4d-1 jBaHMf">Siga nossa Pós</a> */}
-            <div className="style__ListRowContainer-sc-1bpch4d-4 gzygZ">
+            <p className="Footer_container-column-title">Siga nossa Pós</p>
+            <div className="Footer_container-row">
               <a
                 href="https://www.facebook.com/descomplica.pos/"
                 target="_self"
@@ -316,7 +301,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="style__BottomContainer-sc-1bpch4d-5 firlKe">
+      <div className="Footer_bottom-container">
         <img
           src="https://flowpress-production.s3.sa-east-1.amazonaws.com/wp-content/uploads/2021/03/25182018/logo-faculdade-descomplica.svg"
           alt="logo faculdade descomplica"

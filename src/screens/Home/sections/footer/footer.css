@@ -70,3 +70,28 @@
     height: 1.11rem;
     width: 1.11rem;
 }
+
+.Footer_img-store {
+    margin: .6rem .44rem 0 0;
+    width: 7.22rem;    
+}
+
+.Footer_container-row {
+    align-items: center;
+    display: flex;    
+}
+
+.Footer_container-column-title {
+    color: #FFFFFF;
+    display: block;
+    font-size: .88rem;
+    font-weight: 600;
+    line-height: 150%;    
+}
+
+.Footer_bottom-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    width: 100%;
+}
