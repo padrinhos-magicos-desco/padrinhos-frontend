@@ -7,9 +7,7 @@ const Sandbox: React.FC = () => {
     <>
       <RegisterBox
         imageUrl="register-headset-image.png"
-        onContinue={() => {
-          console.log('teste');
-        }}
+        onContinue={() => null}
       >
         <p className="Sandbox_p">
           Olá! Todo mundo quer saber, como te chamamos?
