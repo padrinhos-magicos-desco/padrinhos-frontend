@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import LoadingContext from '../../contexts/loading';
 import Loading from '../../components/loading';
 import { getData } from '../../gateways/api';
-import Logo from '../../components/logo/logo';
+import Logo from '../../components/logo';
 
 import './home.css';
 
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <section className="home-screen-section home-screen-main">
+      <section className="Home_section Home_main-section">
         <nav>
           <Logo />
           <ul>
@@ -40,12 +40,12 @@ const Home: React.FC = () => {
           </ul>
         </nav>
       </section>
-      <section className="home-screen-section home-screen-secondary" />
-      <section className="home-screen-section home-screen-benefits" />
-      <section className="home-screen-section home-screen-get-to-know" />
-      <section className="home-screen-section home-screen-social-proof" />
-      <section className="home-screen-section home-screen-last-call" />
-      <section className="home-screen-section home-screen-footer" />
+      <section className="Home_section Home_secondary-section" />
+      <section className="Home_section Home_benefits-section" />
+      <section className="Home_section Home_get-to-know-section" />
+      <section className="Home_section Home_social-proof-section" />
+      <section className="Home_section Home_last-call-section" />
+      <section className="Home_section Home_screen-footer-section" />
     </>
   );
 };
