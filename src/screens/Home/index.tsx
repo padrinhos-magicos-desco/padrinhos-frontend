@@ -2,6 +2,7 @@ import Logo from '../../components/logo';
 import Button from '../../components/button';
 import Benefits from './sections/benefits';
 
+import HowItWorksSection from './sections/how-it-works/how-it-works';
 import SocialProofSection from './sections/social-proof';
 
 import './home.css';
@@ -40,7 +41,7 @@ const Home: React.FC = () => {
           <div className="Home_image">imagem</div>
         </div>
       </section>
-      <section className="Home_section Home_secondary-section" />
+      <HowItWorksSection />
       <section className="Home_section Home_benefits-section">
         <Benefits />
       </section>
