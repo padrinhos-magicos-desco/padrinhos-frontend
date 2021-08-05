@@ -2,12 +2,14 @@ import Button from '../button';
 import Check from '../icon/Check';
 
 import './cta-card.css';
+import Stamp from './stamp';
 
 type Props = {
   title: string;
   subtitle: string;
   topics: string[];
   buttonText: string;
+  showStamp?: boolean;
 };
 
 const CTACard: React.FC<Props> = ({
@@ -15,6 +17,7 @@ const CTACard: React.FC<Props> = ({
   subtitle,
   topics,
   buttonText,
+  showStamp,
 }: Props) => {
   return (
     <div className="CTACard_container">
@@ -29,10 +32,19 @@ const CTACard: React.FC<Props> = ({
             </p>
           </>
         ))}
+        {showStamp && (
+          <div className="CTACard_stamp-wrapper">
+            <Stamp />
+          </div>
+        )}
       </div>
       <Button buttonText={buttonText} />
     </div>
   );
+};
+
+CTACard.defaultProps = {
+  showStamp: false,
 };
 
 export default CTACard;

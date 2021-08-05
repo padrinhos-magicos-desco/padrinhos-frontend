@@ -1,0 +1,24 @@
+.HowItWorks_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1280px;
+  height: 725px;
+}
+
+.HowItWork_title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -1.8px;
+  color: #ffffff;
+  margin-bottom: 38px;
+}
+
+.HowItWork_card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+}

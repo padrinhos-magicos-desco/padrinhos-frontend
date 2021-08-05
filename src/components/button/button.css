@@ -6,6 +6,8 @@
   padding: 0 25px;
   border-radius: 56px;
   border-style: solid;
+
+  cursor: pointer;
 }
 
 .Button_container a {
@@ -13,8 +15,12 @@
 }
 
 .Button_container p {
-  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
+  font-size: 20px;
   line-height: 24px;
+
   letter-spacing: -0.8px;
+
+  color: #111111;
 }

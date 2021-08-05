@@ -1,6 +1,6 @@
 import './benefits.css';
 
-const Benefits: React.FC = () => {
+const BenefitsSection: React.FC = () => {
   return (
     <div className="Benefits_container">
       <div className="Benefits_title">
@@ -36,4 +36,4 @@ const Benefits: React.FC = () => {
   );
 };
 
-export default Benefits;
+export default BenefitsSection;
