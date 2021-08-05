@@ -4,9 +4,11 @@
   align-items: center;
   height: 56px;
   border: none;
-  border-radius: 20px;
+  border-radius: 56px;
 
   padding: 0 25px;
+
+  border: 1.5px solid;
 }
 
 .Button_container a {

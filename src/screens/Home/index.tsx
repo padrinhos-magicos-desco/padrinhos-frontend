@@ -13,11 +13,13 @@ const Home: React.FC = () => {
             <Button
               buttonText="Quero participar"
               buttonColor="#00e88f"
+              borderColor="#00e88f"
               buttonTextColor="#000"
             />
             <Button
               buttonText="Entrar"
               buttonColor="#000"
+              borderColor="#fff"
               buttonTextColor="#fff"
             />
           </nav>
