@@ -1,6 +1,6 @@
 import Button from '../button';
 
-import './button.css';
+import './cta-card.css';
 
 type Props = {
   title: string;
@@ -21,7 +21,7 @@ const CTACard: React.FC<Props> = ({
       <h2 className="CTACard_subtitle">{subtitle}</h2>
       <div className="CTACard_topics" />
       {topics.map((topic) => (
-        <p>{topic}</p>
+        <p className="CTACard_topic">{topic}</p>
       ))}
       <Button buttonText={buttonText} />
     </div>
