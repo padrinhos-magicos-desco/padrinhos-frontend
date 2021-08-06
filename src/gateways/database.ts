@@ -72,6 +72,26 @@ class Database {
     this.Sponsorships.push(sponsorship);
   }
   // #endregion
+
+  // #region login methods
+  public getLogin(email: string, password: string): Sponsor | Sponsored | null {
+    const sponsor = this.Sponsors.find(
+      (s) => s.Email === email && s.Password === password
+    );
+    if (sponsor) {
+      return sponsor;
+    }
+
+    const sponsored = this.Sponsoreds.find(
+      (s) => s.Email === email && s.Password === password
+    );
+    if (sponsored) {
+      return sponsored;
+    }
+
+    return null;
+  }
+  // #endregion
 }
 
 export default Database;

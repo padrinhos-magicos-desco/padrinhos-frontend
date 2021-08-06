@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+import Database from '../../gateways/database';
+import SponsoredModel from '../../domain/sponsored';
+
 import RegisterBox from '../../components/register-box';
 import Button from '../../components/button';
 import Logo from '../../components/logo';
@@ -16,6 +19,8 @@ const Sponsored: React.FC = () => {
   const [courseValue, setCourseValue] = useState('');
   const [myMomentTextValue, setMyMomentTextValue] = useState('');
   const [biographyValue, setBiographyValue] = useState('');
+  const [incomeValue, setIncomeValue] = useState('');
+  const [passwordValue, setPasswordValue] = useState('');
 
   const [step, setStep] = useState(1);
 
@@ -40,8 +45,30 @@ const Sponsored: React.FC = () => {
   const handleBiographyTextAreaChange = (value: string) => {
     setBiographyValue(value);
   };
+  const handleIncomeInputChange = (value: string) => {
+    setIncomeValue(value);
+  };
+  const handlePasswordInputChange = (value: string) => {
+    setPasswordValue(value);
+  };
 
   const handleContinue = () => {
+    if (step === 7) {
+      const sponsored = new SponsoredModel(
+        nameValue,
+        lastNameValue,
+        emailValue,
+        passwordValue,
+        phoneValue,
+        courseValue,
+        myMomentTextValue,
+        incomeValue,
+        biographyValue
+      );
+
+      const db = Database.getDatabase();
+      db.addSponsored(sponsored);
+    }
     setStep(step + 1);
   };
 
@@ -165,6 +192,31 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!incomeValue}
+      >
+        <>
+          <p className="Sponsored_p">Pergunta sobre a renda familiar dele</p>
+          <div className="Sponsored_inputs">
+            <Input
+              placeholder="Renda familiar em reais"
+              type="text"
+              handleChange={handleIncomeInputChange}
+            />
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
+  const renderStep6 = () => {
+    if (step !== 6) {
+      return null;
+    }
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
         disabled={!biographyValue}
       >
         <>
@@ -175,6 +227,31 @@ const Sponsored: React.FC = () => {
               rows={8}
               cols={100}
               onChange={(e) => handleBiographyTextAreaChange(e.target.value)}
+            />
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
+  const renderStep7 = () => {
+    if (step !== 7) {
+      return null;
+    }
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
+        disabled={!passwordValue}
+      >
+        <>
+          <p className="Sponsored_p">Para finalizarmos, insira uma senha</p>
+          <div className="Sponsored_inputs">
+            <Input
+              placeholder="Senha"
+              type="password"
+              handleChange={handlePasswordInputChange}
             />
           </div>
         </>
@@ -209,6 +286,8 @@ const Sponsored: React.FC = () => {
       {renderStep3()}
       {renderStep4()}
       {renderStep5()}
+      {renderStep6()}
+      {renderStep7()}
     </div>
   );
 };
