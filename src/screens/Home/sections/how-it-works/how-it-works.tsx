@@ -18,6 +18,7 @@ const HowItWorksSection: React.FC = () => {
             'O que eu ganho com isso',
           ]}
           buttonText="Quero apadrinhar alguém"
+          buttonUrl="/padrinho/cadastro"
           showStamp
         />
         <CTACard
@@ -31,6 +32,7 @@ const HowItWorksSection: React.FC = () => {
             'O que eu ganho com isso',
           ]}
           buttonText="Quero ter um padrinho"
+          buttonUrl="/apadrinhado/cadastro"
         />
       </div>
     </section>
