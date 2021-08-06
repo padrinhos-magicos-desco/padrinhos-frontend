@@ -54,7 +54,7 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
-        disabled={!nameValue && !lastNameValue}
+        disabled={!nameValue || !lastNameValue}
       >
         <>
           <p className="Sponsored_p">
@@ -86,7 +86,7 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
-        disabled={!emailValue && !phoneValue}
+        disabled={!emailValue || !phoneValue}
       >
         <>
           <p className="Sponsored_p">Como entramos em contato com você?</p>
