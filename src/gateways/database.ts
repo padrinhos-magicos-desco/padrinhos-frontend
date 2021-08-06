@@ -4,8 +4,6 @@ import Sponsored from '../domain/sponsored';
 import { Sponsorship } from '../domain/sponsorship';
 
 class Database {
-  public static loggedUser: Sponsor | Sponsored;
-
   private Sponsors: Array<Sponsor> = [
     new Sponsor(
       'Padrinho',
@@ -42,6 +40,14 @@ class Database {
       this.singleDatabase = new Database();
     }
     return this.singleDatabase;
+  }
+
+  public static getUserLogged(): Sponsored | Sponsor | null {
+    const userLoggedString = localStorage.getItem('userLogged');
+    if (!userLoggedString) {
+      return null;
+    }
+    return JSON.parse(userLoggedString);
   }
 
   // #region sponsors methods

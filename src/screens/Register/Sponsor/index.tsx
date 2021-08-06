@@ -64,11 +64,7 @@ const SponsorScreen: React.FC = () => {
     setStep(step + 1);
   };
 
-  const renderStep1 = () => {
-    if (step !== 1) {
-      return null;
-    }
-
+  const renderNameStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -96,11 +92,7 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
-  const renderStep2 = () => {
-    if (step !== 2) {
-      return null;
-    }
-
+  const renderEmailPhoneStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -126,11 +118,7 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
-  const renderStep3 = () => {
-    if (step !== 3) {
-      return null;
-    }
-
+  const renderDocumentStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -151,11 +139,7 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
-  const renderStep4 = () => {
-    if (step !== 4) {
-      return null;
-    }
-
+  const renderInvestmentRangeStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -169,18 +153,13 @@ const SponsorScreen: React.FC = () => {
             min={300}
             max={10000}
             currentIndex={investmentRangeValue}
-            defaultValue={800}
           />
         </>
       </RegisterBox>
     );
   };
 
-  const renderStep5 = () => {
-    if (step !== 7) {
-      return null;
-    }
-
+  const renderPasswordStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -201,26 +180,47 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
+  const renderCurrentStep = () => {
+    switch (step) {
+      case 1:
+        // return renderNameStep();
+        return renderInvestmentRangeStep();
+      case 2:
+        return renderEmailPhoneStep();
+      case 3:
+        return renderDocumentStep();
+      case 4:
+        return renderInvestmentRangeStep();
+      case 5:
+        return renderPasswordStep();
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="Sponsor_container">
       <div className="Sponsor_header">
         <Logo />
         <nav className="Sponsor_buttons">
+          {/* <Button
+            buttonText="Quero participar"
+            buttonColor="#00e88f"
+            borderColor="#00e88f"
+            buttonTextColor="#000"
+            url="/apadrinhado/cadastro"
+          /> */}
           <Button
             buttonText="Entrar"
             buttonColor="#000"
             borderColor="#fff"
             buttonTextColor="#fff"
             useBorder
-            url="/login"
+            url="/screen/100"
           />
         </nav>
       </div>
-      {renderStep1()}
-      {renderStep2()}
-      {renderStep3()}
-      {renderStep4()}
-      {renderStep5()}
+      {renderCurrentStep()}
     </div>
   );
 };
