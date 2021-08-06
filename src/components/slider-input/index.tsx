@@ -1,4 +1,5 @@
 import ReactSlider from 'react-slider';
+import './slider-input.css';
 
 type Props = {
   onChange: (value: number) => void;
@@ -8,7 +9,7 @@ type Props = {
   max: number;
 };
 
-const LogoVeja: React.FC<Props> = ({
+const SliderInput: React.FC<Props> = ({
   onChange,
   currentIndex,
   defaultValue,
@@ -29,4 +30,4 @@ const LogoVeja: React.FC<Props> = ({
   );
 };
 
-export default LogoVeja;
+export default SliderInput;
