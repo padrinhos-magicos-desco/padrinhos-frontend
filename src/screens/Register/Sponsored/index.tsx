@@ -158,7 +158,8 @@ const SponsoredScreen: React.FC = () => {
         <>
           <h2 className="Sponsored_h2">Crie uma senha</h2>
           <p className="Sponsored_p">
-            Não compartilhe essa senha com ninguém, tá?
+            Com esse login, você vai poder acessar o status do apadrinhamento e
+            se comunicar com seus padrinhos
           </p>
           <div className="Sponsored_inputs">
             <Input
