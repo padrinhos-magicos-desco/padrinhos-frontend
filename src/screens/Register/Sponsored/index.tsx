@@ -84,8 +84,9 @@ const SponsoredScreen: React.FC = () => {
         disabled={!nameValue || !lastNameValue}
       >
         <>
+          <h2 className="Sponsored_h2">Tá precisando de uma força?</h2>
           <p className="Sponsored_p">
-            Olá! Todo mundo quer saber, como te chamamos?
+            Antes de tudo, a gente precisa saber: como te chamamos?
           </p>
           <div className="Sponsored_inputs">
             <Input
@@ -116,7 +117,10 @@ const SponsoredScreen: React.FC = () => {
         disabled={!emailValue || !phoneValue}
       >
         <>
-          <p className="Sponsored_p">Como entramos em contato com você?</p>
+          <h2 className="Sponsored_h2">
+            Precisamos saber um pouquinho mais de você
+          </h2>
+          <p className="Sponsored_p">Conta pra gente seu e-mail e telefone</p>
           <div className="Sponsored_inputs">
             <Input
               placeholder="E-mail"
@@ -146,7 +150,10 @@ const SponsoredScreen: React.FC = () => {
         disabled={!passwordValue}
       >
         <>
-          <p className="Sponsored_p">Crie uma senha</p>
+          <h2 className="Sponsored_h2">Crie uma senha</h2>
+          <p className="Sponsored_p">
+            Não compartilhe essa senha com ninguém, tá?
+          </p>
           <div className="Sponsored_inputs">
             <Input
               placeholder="Senha"
@@ -171,7 +178,8 @@ const SponsoredScreen: React.FC = () => {
         disabled={!courseValue}
       >
         <>
-          <p className="Sponsored_p">Qual curso você gostaria de fazer?</p>
+          <h2 className="Sponsored_h2">Qual curso você quer?</h2>
+          <p className="Sponsored_p">Tá precisando de uma força?</p>
           <div className="Sponsored_dropdown">
             <Dropdown handleChange={handleCourseInputChange} />
           </div>
@@ -192,9 +200,10 @@ const SponsoredScreen: React.FC = () => {
         disabled={!myMomentTextValue}
       >
         <>
-          <p className="Sponsored_p">
+          <h2 className="Sponsored_h2">
             Conta pra gente: como está seu momento agora?
-          </p>
+          </h2>
+          <p className="Sponsored_p">Tá precisando de uma força?</p>
           <div className="Sponsored_textarea-container">
             <textarea
               className="Sponsored_textarea"
@@ -220,7 +229,8 @@ const SponsoredScreen: React.FC = () => {
         disabled={!incomeValue}
       >
         <>
-          <p className="Sponsored_p">Pergunta sobre a renda familiar dele</p>
+          <h2 className="Sponsored_h2">Pergunta sobre a renda familiar dele</h2>
+          <p className="Sponsored_p">Tá precisando de uma força?</p>
           <div className="Sponsored_inputs">
             <Input
               placeholder="Renda familiar em reais"
@@ -245,7 +255,10 @@ const SponsoredScreen: React.FC = () => {
         disabled={!biographyValue}
       >
         <>
-          <p className="Sponsored_p">Pergunta sobre a história de vida dele</p>
+          <h2 className="Sponsored_h2">
+            Pergunta sobre a história de vida dele
+          </h2>
+          <p className="Sponsored_p">Tá precisando de uma força?</p>
           <div className="Sponsored_textarea-container">
             <textarea
               className="Sponsored_textarea"
