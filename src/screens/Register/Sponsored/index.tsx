@@ -69,6 +69,8 @@ const SponsoredScreen: React.FC = () => {
       const db = Database.getDatabase();
       db.addSponsored(sponsored);
 
+      db.serializeDB();
+
       localStorage.setItem('userLogged', JSON.stringify(sponsored));
       window.location.href = '/apadrinhado';
     }

@@ -7,8 +7,13 @@ import Sponsored from '../screens/Logged/Sponsored';
 import Sponsor from '../screens/Logged/Sponsor';
 import Login from '../screens/Login';
 import Sandbox from '../screens/Sandbox';
+import Database from '../gateways/database';
 
 const AppRouter = () => {
+  const db = Database.getDatabase();
+  db.deserializeDB();
+  db.serializeDB();
+
   return (
     <Router>
       <Route path="/" exact component={Home} />

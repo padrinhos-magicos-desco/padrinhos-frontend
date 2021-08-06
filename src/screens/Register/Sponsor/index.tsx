@@ -60,6 +60,8 @@ const SponsorScreen: React.FC = () => {
 
       const db = Database.getDatabase();
       db.addSponsor(sponsor);
+
+      db.serializeDB();
     }
     setStep(step + 1);
   };
