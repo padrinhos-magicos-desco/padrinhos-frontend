@@ -1,6 +1,7 @@
 .Modal_blur {
   width: 100vw;
-  height: 100vh;
+  top: 0;
+  bottom: 0;
   position: absolute;
   background-color: #000;
   opacity: 0.7;

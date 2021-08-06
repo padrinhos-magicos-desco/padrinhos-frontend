@@ -6,6 +6,7 @@ type Props = {
   onContinue: () => void;
   children: JSX.Element;
   final?: boolean;
+  hideImage?: boolean;
 };
 
 const FALLBACK_IMAGE = '';
@@ -16,6 +17,7 @@ const RegisterBox: React.FC<Props> = ({
   children,
   disabled,
   final,
+  hideImage,
 }: Props) => {
   return (
     <div className="RegisterBox_container">
@@ -34,7 +36,7 @@ const RegisterBox: React.FC<Props> = ({
             )}
           </div>
         </div>
-        <img src={imageUrl} alt="" />
+        {!hideImage && <img src={imageUrl} alt="" />}
       </div>
     </div>
   );
@@ -44,6 +46,7 @@ RegisterBox.defaultProps = {
   disabled: false,
   imageUrl: FALLBACK_IMAGE,
   final: false,
+  hideImage: false,
 };
 
 export default RegisterBox;

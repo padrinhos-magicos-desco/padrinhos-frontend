@@ -11,6 +11,7 @@ import SliderInput from '../../../components/slider-input';
 import Modal from '../../../components/modal';
 
 import './sponsor.css';
+import SponsoredCard from '../../../components/sponsored-card';
 
 const SponsorScreen: React.FC = () => {
   const [nameValue, setNameValue] = useState('');
@@ -55,7 +56,7 @@ const SponsorScreen: React.FC = () => {
       setShouldShowConfirmationModal(false);
     }
 
-    if (step === 7) {
+    if (step === 8) {
       const sponsor = new SponsorModel(
         nameValue,
         lastNameValue,
@@ -223,6 +224,40 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
+  const renderChooseSponsoredStep = () => {
+    const db = Database.getDatabase();
+    const topSponsored = db.getSponsoreds().slice(0, 3);
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
+        disabled={!passwordValue}
+        hideImage
+        final
+      >
+        <>
+          <h2 className="Sponsor_h2">Quem você quer apadrinhar</h2>
+          <div className="Sponsor_sponsored-card-container">
+            {topSponsored.map((s, index) => {
+              if (index > 8) {
+                return null;
+              }
+              return (
+                <SponsoredCard
+                  progress={s.Progress}
+                  desiredCourse={s.DesiredCourse}
+                  biography={s.Biography}
+                  onClick={handleContinue}
+                />
+              );
+            })}
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
   const renderCheckoutStep = () => {
     return (
       <RegisterBox
@@ -231,7 +266,7 @@ const SponsorScreen: React.FC = () => {
         disabled={false}
       >
         <>
-          <p className="Sponsor_p">Insira aqui seu cartão:</p>
+          <h2 className="Sponsor_h2">Insira aqui seu cartão:</h2>
           <div className="Sponsor_checkout-inputs Sponsor_checkout-fullsize-inputs">
             <Input
               key="cardNumber"
@@ -280,6 +315,8 @@ const SponsorScreen: React.FC = () => {
       case 5:
         return renderInvestmentRangeStep();
       case 7:
+        return renderChooseSponsoredStep();
+      case 8:
         return renderCheckoutStep();
       default:
         return null;
