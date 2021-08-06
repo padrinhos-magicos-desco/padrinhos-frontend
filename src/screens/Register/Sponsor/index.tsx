@@ -79,11 +79,13 @@ const SponsorScreen: React.FC = () => {
           </p>
           <div className="Sponsor_inputs">
             <Input
+              key="name"
               placeholder="Nome"
               type="text"
               handleChange={handleNameInputChange}
             />
             <Input
+              key="lastname"
               placeholder="Sobrenome"
               type="text"
               handleChange={handleLastNameInputChange}
@@ -105,11 +107,13 @@ const SponsorScreen: React.FC = () => {
           <p className="Sponsor_p">Como entramos em contato com você?</p>
           <div className="Sponsor_inputs">
             <Input
+              key="email"
               placeholder="E-mail"
               type="email"
               handleChange={handleEmailInputChange}
             />
             <Input
+              key="phone"
               placeholder="Telefone"
               type="tel"
               handleChange={handlePhoneInputChange}
@@ -131,6 +135,7 @@ const SponsorScreen: React.FC = () => {
           <p className="Sponsor_p">Qual curso você gostaria de fazer?</p>
           <div className="Sponsor_dropdown">
             <Input
+              key="cpf"
               placeholder="CPF ou CNPJ"
               type="cpf"
               handleChange={handleDocumentInputChange}
@@ -177,6 +182,7 @@ const SponsorScreen: React.FC = () => {
           <p className="Sponsor_p">Para finalizarmos, insira uma senha</p>
           <div className="Sponsor_inputs">
             <Input
+              key="senha"
               placeholder="Senha"
               type="password"
               handleChange={handlePasswordInputChange}
