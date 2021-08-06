@@ -22,7 +22,7 @@ const SocialProof: React.FC = () => {
         <TestimonialCard
           name="Márcia Silva"
           subtitle="Pós Graduação Descomplica"
-          testimonial="Meu padrinho me deu a oportunidade de seguir um sonho antigo: estudar de novo"
+          testimonial="“Após ter largado tudo pra cuidar dos meus filhos, meu padrinho me deu a oportunidade de seguir um sonho antigo: estudar de novo”"
           image="/pessoa1.png"
         />
         <TestimonialCard
