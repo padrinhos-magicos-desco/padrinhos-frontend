@@ -28,7 +28,7 @@ class Database {
       'Engenharia da Computação',
       'Nesse pull request, o último pull request desse SCRUM causou o bug da execução parelela de funções em multi-threads.',
       900,
-      'Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Sapien in monti palavris qui num significa nadis i pareci latim.',
+      'Mesmo o sujeito transcendental nos revela que a infinita diversidade da realidade única maximiza as possibilidades por conta das condições epistemológicas e cognitivas exigidas. Por outro lado, a complexidade dos estudos efetuados cumpre um papel essencial na formulação do antiplatonismo fichteano resultante dos movimentos revolucionários de então. Assim mesmo, a estrutura atual da ideação semântica exige a precisão e a definição das relações entre o conteúdo proposicional e o figurado. No entanto, não podemos esquecer que o novo modelo estruturalista aqui preconizado auxilia a preparação e a composição das posturas dos filósofos divergentes com relação às atribuições conceituais.',
       75
     ),
     new Sponsored(
@@ -40,7 +40,7 @@ class Database {
       'Administração',
       'A equipe de suporte precisa saber que a normalização da data deletou todas as entradas no fechamento automático das tags.',
       700,
-      'Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.',
+      'Do mesmo modo, o objeto metapsicológico da razão garante a contribuição de um grupo importante na determinação do direito romano. Finalmente, por trás dessa questão do sujeito e da realidade a consolidação das estruturas psico-lógicas assume importantes posições no estabelecimento das direções preferenciais no sentido do progresso filosófico. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o conceito de diáthesis e os princípios fundamentais de rhytmos e arrythmiston justificaria a existência do fluxo de informações.',
       40
     ),
     new Sponsored(
@@ -52,7 +52,7 @@ class Database {
       'Pedagogia',
       'Por outro lado, a percepção das dificuldades assume importantes posições no estabelecimento dos conhecimentos estratégicos para atingir a excelência.',
       1500,
-      'Quem num gosta di mé, boa gentis num é. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Paisis, filhis, espiritis santis. Não sou faixa preta cumpadi, sou preto inteiris, inteiris.',
+      'Como Deleuze eloquentemente mostrou, o início da atividade geral de formação de conceitos obstaculiza a apreciação da importância do dualismo ontológico das filosofias pré-hegelianas? Deixemos a questão em aberto. Acabei de provar que o desafiador cenário globalizado não oferece uma interessante oportunidade para verificação da dissociação entre o político e o religioso. Se estivesse vivo, Foucault diria que o Übermensch de Nietzsche, ou seja, o Super-Homem, acarreta um processo de reformulação e modernização do processo de comunicação como um todo.',
       33
     ),
     new Sponsored(
@@ -64,7 +64,7 @@ class Database {
       'Engenharia da Computação',
       'A prática cotidiana prova que a competitividade nas transações comerciais maximiza as possibilidades por conta do processo de comunicação como um todo.',
       900,
-      'Casamentiss faiz malandris se pirulitá. Manduma pindureta quium dia nois paga. Delegadis gente finis, bibendum egestas augue arcu ut est. Interagi no mé, cursus quis, vehicula ac nisi.',
+      'As experiências acumuladas demonstram que a expansão dos mercados mundiais possibilita uma interpretação objetiva das definições conceituais da matéria. Contudo, a crítica contundente de Deleuze/Guatarri - dupla implacável - nos mostra que a alteridade do rio heraclítico cumpre um papel essencial na formulação dos princípios da ética normativa deontológica. Segundo Heidegger, o entendimento das metas propostas ainda não demonstrou convincentemente como vai participar na mudança dos testes de falseabilidade das teorias científicas.',
       12
     ),
     new Sponsored(
@@ -76,7 +76,7 @@ class Database {
       'Pedagogia',
       'Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a necessidade de renovação processual aponta para a melhoria do remanejamento dos quadros funcionais.',
       1600,
-      'Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Sapien in monti palavris qui num significa nadis i pareci latim.',
+      'Segundo a tese da eliminabilidade, o aumento do diálogo entre os diferentes setores filosóficos talvez venha a ressaltar a relatividade de universos de Contemplação, espelhados na arte minimalista e no expressionismo abstrato, absconditum. Ainda assim, existem dúvidas a respeito de como a crescente influência da mídia prepara-nos para enfrentar situações atípicas decorrentes dos conceitos nominalistas. A prática cotidiana prova que a necessidade de renovação conceitual permitiria a desconstrução da corrente inovadora da qual fazemos parte.',
       36
     ),
     new Sponsored(
@@ -88,7 +88,7 @@ class Database {
       'Administração',
       'Evidentemente, o início da atividade geral de formação de atitudes é uma das consequências do orçamento setorial.',
       2300,
-      'Quem manda na minha terra sou euzis! Aenean aliquam molestie leo, vitae iaculis nisl. Manduma pindureta quium dia nois paga. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.',
+      'Pode-se argumentar, como Bachelard fizera, que o a priori histórico de uma experiência possível desafia a capacidade de equalização das considerações acima? Nada se pode dizer, pois sobre o que não se pode falar, deve-se calar. Efetuando uma ruptura com Descartes, o uno-múltiplo, repouso-movimento, finito indeterminado, agrega valor ao estabelecimento dos argumentos pró-dêiticos de uma visão subjetivista da ética teleológica. O segundo Wittgenstein (é importante não confundir com o primeiro Wittgenstein) nos mostrou que a instauração do modo aporético do Uno é consequência de uma abordagem dogmática a respeito de todos os recursos funcionais envolvidos.',
       54
     ),
     new Sponsored(
@@ -100,7 +100,7 @@ class Database {
       'Marketing',
       'Acima de tudo, é fundamental ressaltar que o comprometimento entre as equipes cumpre um papel essencial na formulação das formas de ação.',
       1100,
-      'Viva Forevis aptent taciti sociosqu ad litora torquent. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Detraxit consequat et quo num tendi nada. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.',
+      'Segundo Nietzsche, o cálculo proposicional não-quantificado justificaria a adoção dos paradoxos de Zenão, amparados em uma proposta logicista. O dualismo inegável de numerosos pontos evidencia o quanto o não-ser que não é nada facilita a criação das regras de conduta normativas. Seguindo o fluxo da corrente analítica anglo-saxônica, a impossibilidade da possessão da verdade última possibilita uma melhor visão global da dissimetria dos dois tipos de polissemia epistêmica.',
       35
     ),
     new Sponsored(
@@ -112,7 +112,7 @@ class Database {
       'Engenharia da Computação',
       'Estou bem, obrigado!',
       900,
-      'Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Quem num gosta di mé, boa gentis num é. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. A ordem dos tratores não altera o pão duris.',
+      'Este pensamento está vinculado à desconstrução da metafísica, pois o Cristianismo entendido como degradação, na perspectiva universal do polêmico anticristo nietzscheano, não efetua a conexão habitual da sensibilia dos não-sentidos. O movimento inverso da proaíresis, que avança -pro-, como a pro-lépsis, demonstra que o fenômeno da compulsão da repetição aponta para a melhoria da linguagem privada. Evidentemente, o comprometimento entre as ontologias faz parte de um processo de agenciamento dos conceitos de propriedade e cidadania. Deve-se produzir um conceito que a determinação clara de objetivos obstaculiza a admissão de uma ontologia da coisa-em-si, entendida como substância retrocedente.',
       87
     ),
     new Sponsored(
@@ -136,7 +136,7 @@ class Database {
       'Administração',
       'O que temos que ter sempre em mente é que o comprometimento entre as equipes oferece uma interessante oportunidade para verificação das novas proposições.',
       1250,
-      'Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.',
+      ' Não obstante, uma adoção de metodologias descentralizadoras constitui uma propriedade inalienável do sistema de formação de quadros que corresponde às necessidades lógico-estruturais. Pensando mais a longo prazo, o princípio leibnizano da identidade dos indiscerníveis e indiscernibilidade dos idênticos apresenta tendências no sentido de aprovar a manutenção dos meios de comunicação, The Media, o fator condicionante da interdependência virtual. O que temos que ter sempre em mente é que a desaceleração no caos ou no limiar de suspensão do infinito é uma das consequências dos paradigmas filosóficos. Contra esta teoria, que admite a realidade empírica do tempo, o fenômeno da Internet afeta positivamente a correta previsão da substância aristotélica fundida com o solipsismo cartesiano em função de uma perspectiva dialético-social.',
       10
     ),
   ];
