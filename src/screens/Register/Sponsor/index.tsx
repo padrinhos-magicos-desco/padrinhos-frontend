@@ -45,7 +45,7 @@ const SponsorScreen: React.FC = () => {
   };
 
   const handleContinue = () => {
-    if (step === 7) {
+    if (step === 5) {
       const sponsor = new SponsorModel(
         nameValue,
         lastNameValue,
@@ -62,6 +62,9 @@ const SponsorScreen: React.FC = () => {
       db.addSponsor(sponsor);
 
       db.serializeDB();
+
+      localStorage.setItem('userLogged', JSON.stringify(sponsor));
+      window.location.href = '/padrinho';
     }
     setStep(step + 1);
   };
