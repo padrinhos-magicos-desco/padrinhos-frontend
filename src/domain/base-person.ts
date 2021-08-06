@@ -1,11 +1,29 @@
 export default class BasePerson {
-  public Id: number | undefined;
+  public Id: number;
 
-  public FullName: string | undefined;
+  public Name: string;
 
-  public Email: string | undefined;
+  public LastName: string;
 
-  public Phone: string | undefined;
+  public Email: string;
 
-  public IncomeRange: string | undefined;
+  public Password: string;
+
+  public Phone: string;
+
+  constructor(
+    id: number,
+    name: string,
+    lastName: string,
+    email: string,
+    password: string,
+    phone: string
+  ) {
+    this.Id = id;
+    this.Name = name;
+    this.LastName = lastName;
+    this.Email = email;
+    this.Password = password;
+    this.Phone = phone;
+  }
 }
