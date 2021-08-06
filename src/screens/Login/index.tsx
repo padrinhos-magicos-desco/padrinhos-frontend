@@ -9,14 +9,18 @@ import './login.css';
 type TParams = { id: string };
 type Props = RouteComponentProps<TParams>;
 
-const Login: React.FC<Props> = ({ match }: Props) => {
+const Login: React.FC<Props> = () => {
   return (
     <>
       <div className="Login_container">
         <div className="Login_content">
           <Logo />
-          <Input placeholder="E-mail" type="email" handleChange={() => {}} />
-          <Input placeholder="Senha" type="password" handleChange={() => {}} />
+          <Input placeholder="E-mail" type="email" handleChange={() => null} />
+          <Input
+            placeholder="Senha"
+            type="password"
+            handleChange={() => null}
+          />
           <Button buttonText="Entrar" url="" />
         </div>
       </div>
