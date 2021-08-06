@@ -35,6 +35,12 @@ const Sponsored: React.FC = () => {
           Olá! Todo mundo quer saber, como te chamamos?
         </p>
       </RegisterBox>
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={() => null}
+      >
+        <p className="Sponsored_p">XPTO</p>
+      </RegisterBox>
     </div>
   );
 };
