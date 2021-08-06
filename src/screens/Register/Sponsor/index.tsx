@@ -193,6 +193,50 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
+  const renderCheckoutStep = () => {
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
+        disabled={false}
+      >
+        <>
+          <p className="Sponsor_p">Efetue seu pagamento</p>
+          <div className="Sponsor_checkout-inputs Sponsor_checkout-fullsize-inputs">
+            <Input
+              key="cardNumber"
+              placeholder="Número do cartão"
+              type="text"
+              handleChange={() => {}}
+            />
+          </div>
+          <div className="Sponsor_checkout-inputs Sponsor_checkout-fullsize-inputs">
+            <Input
+              key="cardHolderName"
+              placeholder="Nome como no cartão"
+              type="text"
+              handleChange={() => {}}
+            />
+          </div>
+          <div className="Sponsor_checkout-inputs">
+            <Input
+              key="cardExpireDate"
+              placeholder="MM/AA"
+              type="text"
+              handleChange={() => {}}
+            />
+            <Input
+              key="cardCVV"
+              placeholder="Cód. de segurança"
+              type="text"
+              handleChange={() => {}}
+            />
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
   const renderCurrentStep = () => {
     switch (step) {
       case 1:
@@ -205,6 +249,8 @@ const SponsorScreen: React.FC = () => {
         return renderDocumentStep();
       case 5:
         return renderInvestmentRangeStep();
+      case 6:
+        return renderCheckoutStep();
       default:
         return null;
     }

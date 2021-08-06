@@ -37,6 +37,19 @@
   padding: 30px 40px;
 }
 
+.Sponsor_checkout-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 40px;
+}
+
+.Sponsor_checkout-fullsize-inputs > input {
+  width: 100%
+}
+
 .Sponsor_textarea-container {
   display: flex;
   flex-direction: row;
