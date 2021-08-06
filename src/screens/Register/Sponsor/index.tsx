@@ -12,6 +12,7 @@ import Modal from '../../../components/modal';
 
 import './sponsor.css';
 import SponsoredCard from '../../../components/sponsored-card';
+import ShareButtons from '../../../components/share-buttons';
 
 const SponsorScreen: React.FC = () => {
   const [nameValue, setNameValue] = useState('');
@@ -56,7 +57,7 @@ const SponsorScreen: React.FC = () => {
       setShouldShowConfirmationModal(false);
     }
 
-    if (step === 8) {
+    if (step === 9) {
       const sponsor = new SponsorModel(
         nameValue,
         lastNameValue,
@@ -302,6 +303,31 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
+  const renderShareStep = () => {
+    const biographyValue = 'Que tal inspirar mais pessoas a fazer o mesmo?';
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
+        final
+      >
+        <>
+          <h2 className="Sponsored_h2">
+            Obrigado por mudar a vida do seu apadrinhado!
+          </h2>
+          <div className="Sponsored_final">
+            <p className="Sponsored_p">{biographyValue}</p>
+            <ShareButtons shareText={biographyValue} />
+            <button type="button" onClick={() => handleContinue()}>
+              Ir para a plataforma
+            </button>
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
   const renderCurrentStep = () => {
     switch (step) {
       case 1:
@@ -318,6 +344,8 @@ const SponsorScreen: React.FC = () => {
         return renderChooseSponsoredStep();
       case 8:
         return renderCheckoutStep();
+      case 9:
+        return renderShareStep();
       default:
         return null;
     }
