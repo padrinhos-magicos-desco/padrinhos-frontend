@@ -32,11 +32,13 @@ const LoginScreen: React.FC<Props> = () => {
     if (user && user instanceof Sponsor) {
       Database.loggedUser = user;
       window.location.href = '/padrinho';
+      return null;
     }
 
     if (user && user instanceof Sponsored) {
       Database.loggedUser = user;
       window.location.href = '/apadrinhado';
+      return null;
     }
 
     setErrorMessage('Dados informados são inválidos');
