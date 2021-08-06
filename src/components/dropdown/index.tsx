@@ -18,16 +18,18 @@ const Dropdown: React.FC<Props> = ({ handleChange }: Props) => {
       value={value}
       onChange={(e) => handleOnChange(e.target.value)}
     >
-      <option value="adm">Administração</option>
-      <option value="ads">Análise e Desenvolvimento de Sistemas</option>
-      <option value="cc">Ciências Contábeis</option>
-      <option value="ec">Engenharia da Computação</option>
-      <option value="gf">Gestão Financeira</option>
-      <option value="log">Logística</option>
-      <option value="mkt">Marketing</option>
-      <option value="ped">Pedagogia</option>
-      <option value="rh">Recursos Humanos</option>
-      <option value="si">Sistemas da Informação</option>
+      <option value="Administração">Administração</option>
+      <option value="Análise e Desenvolvimento de Sistemas">
+        Análise e Desenvolvimento de Sistemas
+      </option>
+      <option value="Ciências Contábeis">Ciências Contábeis</option>
+      <option value="Engenharia da Computação">Engenharia da Computação</option>
+      <option value="Gestão Financeira">Gestão Financeira</option>
+      <option value="Logística">Logística</option>
+      <option value="Marketing">Marketing</option>
+      <option value="Pedagogia">Pedagogia</option>
+      <option value="Recursos Humanos">Recursos Humanos</option>
+      <option value="Sistemas da Informação">Sistemas da Informação</option>
     </select>
   );
 };

@@ -28,12 +28,16 @@
   padding-top: 30px;
 }
 
-.Sponsored_name {
+.Sponsored_inputs {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
+  padding: 30px 40px;
+}
+
+.Sponsored_dropdown {
   padding: 30px 40px;
 }
 
