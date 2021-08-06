@@ -66,7 +66,9 @@ const Sponsored: React.FC = () => {
         imageUrl="/register-headset-image.png"
         onContinue={() => null}
       >
-        <p className="Sponsored_p">XPTO</p>
+        <p className="Sponsored_p">
+          nome: {nameValue} {lastNameValue}
+        </p>
       </RegisterBox>
     </div>
   );
