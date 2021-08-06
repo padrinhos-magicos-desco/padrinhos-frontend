@@ -43,12 +43,14 @@ const Dropdown: React.FC<Props> = ({ handleChange }: Props) => {
       <option value="Sistemas da Informação">
         Faculdade Descomplica - Sistemas da Informação
       </option>
-      <option value="Logística">Pós Descomplica - Apucuntura</option>
-      <option value="Logística">Pós Descomplica - Big Data</option>
-      <option value="Logística">
+      <option value="Pós em Apucuntura">Pós Descomplica - Apucuntura</option>
+      <option value="Pós em Big Data">Pós Descomplica - Big Data</option>
+      <option value="MBA em Inteligência de Mercado">
         Pós Descomplica - MBA em Inteligência de Mercado
       </option>
-      <option value="Logística">Pós Descomplica - MBA em Marketing</option>
+      <option value="MBA em Marketing">
+        Pós Descomplica - MBA em Marketing
+      </option>
     </select>
   );
 };
