@@ -64,11 +64,7 @@ const SponsorScreen: React.FC = () => {
     setStep(step + 1);
   };
 
-  const renderStep1 = () => {
-    if (step !== 1) {
-      return null;
-    }
-
+  const renderNameStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -96,11 +92,7 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
-  const renderStep2 = () => {
-    if (step !== 2) {
-      return null;
-    }
-
+  const renderEmailPhoneStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -126,11 +118,7 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
-  const renderStep3 = () => {
-    if (step !== 3) {
-      return null;
-    }
-
+  const renderDocumentStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -151,11 +139,7 @@ const SponsorScreen: React.FC = () => {
     );
   };
 
-  const renderStep4 = () => {
-    if (step !== 4) {
-      return null;
-    }
-
+  const renderInvestmentRangeStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -169,18 +153,13 @@ const SponsorScreen: React.FC = () => {
             min={300}
             max={10000}
             currentIndex={investmentRangeValue}
-            defaultValue={800}
           />
         </>
       </RegisterBox>
     );
   };
 
-  const renderStep5 = () => {
-    if (step !== 7) {
-      return null;
-    }
-
+  const renderPasswordStep = () => {
     return (
       <RegisterBox
         imageUrl="/register-headset-image.png"
@@ -199,6 +178,23 @@ const SponsorScreen: React.FC = () => {
         </>
       </RegisterBox>
     );
+  };
+
+  const renderCurrentStep = () => {
+    switch (step) {
+      case 1:
+        return renderNameStep();
+      case 2:
+        return renderEmailPhoneStep();
+      case 3:
+        return renderDocumentStep();
+      case 4:
+        return renderInvestmentRangeStep();
+      case 5:
+        return renderPasswordStep();
+      default:
+        return null;
+    }
   };
 
   return (
@@ -223,11 +219,7 @@ const SponsorScreen: React.FC = () => {
           />
         </nav>
       </div>
-      {renderStep1()}
-      {renderStep2()}
-      {renderStep3()}
-      {renderStep4()}
-      {renderStep5()}
+      {renderCurrentStep()}
     </div>
   );
 };
