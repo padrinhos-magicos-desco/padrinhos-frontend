@@ -51,6 +51,10 @@ const SponsorScreen: React.FC = () => {
       setShouldShowConfirmationModal(true);
     }
 
+    if (step === 6) {
+      setShouldShowConfirmationModal(false);
+    }
+
     if (step === 7) {
       const sponsor = new SponsorModel(
         nameValue,
