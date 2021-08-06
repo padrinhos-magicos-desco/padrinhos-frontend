@@ -272,7 +272,7 @@ const SponsoredScreen: React.FC = () => {
         <>
           <h2 className="Sponsored_h2">Quem é você?</h2>
           <p className="Sponsored_p">
-            Conte pra gente um pouco da sua história de vida
+            Conte porque você precisa desse apadrinhamento
           </p>
           <div className="Sponsored_textarea-container">
             <textarea

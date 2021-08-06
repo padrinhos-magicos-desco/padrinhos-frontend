@@ -84,9 +84,14 @@ const SponsorScreen: React.FC = () => {
         disabled={!nameValue || !lastNameValue}
       >
         <>
+          <h2 className="Sponsor_h2">
+            Gostaríamos de saber um pouquinho mais de você
+          </h2>
           <p className="Sponsor_p">
-            Olá! Todo mundo quer saber, como te chamamos?
+            Adoramos que está aqui! Parabéns pela sua iniciativa. Como podemos
+            te chamar?
           </p>
+
           <div className="Sponsor_inputs">
             <Input
               key="name"
@@ -114,7 +119,12 @@ const SponsorScreen: React.FC = () => {
         disabled={!emailValue || !phoneValue}
       >
         <>
-          <p className="Sponsor_p">Como entramos em contato com você?</p>
+          <h2 className="Sponsor_h2">
+            Precisamos saber um pouquinho mais de você
+          </h2>
+          <p className="Sponsor_p">
+            Conta pra gente seu e-mail e telefone de contato
+          </p>
           <div className="Sponsor_inputs">
             <Input
               key="email"
@@ -142,7 +152,9 @@ const SponsorScreen: React.FC = () => {
         disabled={documentValue.length < 11}
       >
         <>
-          <p className="Sponsor_p">Qual curso você gostaria de fazer?</p>
+          <h2 className="Sponsor_h2">
+            Você que ajudar como Pessoa Física ou Jurídica?
+          </h2>
           <div className="Sponsor_dropdown">
             <Input
               key="cpf"
@@ -164,7 +176,7 @@ const SponsorScreen: React.FC = () => {
         disabled={!investmentRangeValue}
       >
         <>
-          <p className="Sponsor_p">Até quanto você deseja investir?</p>
+          <h2 className="Sponsor_h2">Quanto você deseja investir?</h2>
           <div className="Sponsor_slider-container">
             <div className="Sponsor_slider">
               <SliderInput
@@ -189,7 +201,11 @@ const SponsorScreen: React.FC = () => {
         disabled={!passwordValue}
       >
         <>
-          <p className="Sponsor_p">Para finalizarmos, insira uma senha</p>
+          <h2 className="Sponsor_h2">Crie uma senha</h2>
+          <p className="Sponsor_p">
+            Com esse login, você vai poder acessar uma área onde terá contato
+            com seus apadrinhados
+          </p>
           <div className="Sponsor_inputs">
             <Input
               key="senha"
@@ -210,9 +226,9 @@ const SponsorScreen: React.FC = () => {
       case 2:
         return renderEmailPhoneStep();
       case 3:
-        return renderPasswordStep();
-      case 4:
         return renderDocumentStep();
+      case 4:
+        return renderPasswordStep();
       case 5:
         return renderInvestmentRangeStep();
       default:

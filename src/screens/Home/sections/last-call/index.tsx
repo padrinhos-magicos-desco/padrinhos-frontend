@@ -6,15 +6,9 @@ const LastCall: React.FC = () => {
   return (
     <section>
       <div className="LastCall_container">
-        <h1>
-          Um título bem chamativo de last call. Não pode perder essa
-          oportunidade
-        </h1>
+        <h1>Não perca a oportunidade de se conectar com quem sabe ensinar.</h1>
         <div className="LastCall_subtitle">
-          <p>
-            Um subtítulo que ajude esse título bem maneiro de last call. Trazer
-            pessoas uhul. Projeto 20k
-          </p>
+          <p>Inscreva-se e crie com a gente um futuro melhor pra educação.</p>
         </div>
         <Button
           buttonText="Quero participar"
