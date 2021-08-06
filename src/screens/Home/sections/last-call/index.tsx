@@ -6,7 +6,7 @@ const LastCall: React.FC = () => {
   return (
     <section>
       <div className="LastCall_container">
-        <h1>Não perca a oportunidade de se conectar com quem sabe ensinar.</h1>
+        <h1>Não perca a oportunidade de se conectar e somar forças</h1>
         <div className="LastCall_subtitle">
           <p>Inscreva-se e crie com a gente um futuro melhor pra educação.</p>
         </div>
