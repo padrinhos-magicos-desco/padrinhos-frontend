@@ -207,7 +207,9 @@ class Database {
 
   // #region sponsoreds methods
   public getSponsoreds(): Array<Sponsored> {
-    return this.Sponsoreds;
+    return this.Sponsoreds.sort((a, b) => {
+      return (b.Progress || 0) - (a.Progress || 0);
+    });
   }
 
   public getSponsored(id: string): Sponsored | undefined {

@@ -1,7 +1,93 @@
-.Sponsor_container {
+.LoggedSponsor_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1280px;
   margin: auto;
+
+  padding: 50px;
+}
+
+.LoggedSponsor_sponsoreds {
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 1000px;
+  flex-wrap: wrap;
+}
+
+.LoggedSponsor_sponsored-card {
+  background: #F8F8F8;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+
+  width: 340px;
+  height: 250px;
+
+  padding: 30px;
+  margin-right: 20px;
+}
+
+.LoggedSponsor_sponsored-card:hover {
+  cursor: pointer;
+}
+
+.LoggedSponsor_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: -0.8px;
+  margin-top: 10px;
+  
+  color: #000000;
+}
+
+.LoggedSponsor_description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+
+  letter-spacing: -0.6px;
+  margin-top: 21px;
+  
+  color: #000000;
+}
+
+.LoggedSponsor_page-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 48px;
+
+  text-align: center;
+  letter-spacing: -1px;
+
+  color: #FFFFFF;
+}
+
+.LoggedSponsor_page-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+
+  text-align: center;
+  letter-spacing: -0.3px;
+
+  margin-top: 16px;
+
+  color: #FFFFFF;
+}
+
+.LoggedSponsor_progress {
+  position: relative;
+}
+
+.LoggedSponsor_sponsored-progress {
+  display: flex;
+  flex-direction: column;
 }
