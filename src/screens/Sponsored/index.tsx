@@ -277,7 +277,7 @@ const Sponsored: React.FC = () => {
             borderColor="#fff"
             buttonTextColor="#fff"
             useBorder
-            url="/screen/100"
+            url="/login"
           />
         </nav>
       </div>
