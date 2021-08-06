@@ -221,9 +221,14 @@ const SponsorScreen: React.FC = () => {
   };
 
   const renderModal = () => {
+    const closeHandler = () => {
+      setShouldShowConfirmationModal(false);
+      setStep(5);
+    };
+
     if (!shouldShowModal) return null;
     return (
-      <Modal onCloseClick={() => setShouldShowConfirmationModal(false)}>
+      <Modal onCloseClick={closeHandler}>
         <>
           <div className="Sponsor_modal-content">
             <h3 className="Sponsor_modal-title">Confirmação de compromisso</h3>
