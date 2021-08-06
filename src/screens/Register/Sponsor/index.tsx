@@ -275,7 +275,7 @@ const SponsorScreen: React.FC = () => {
         return renderPasswordStep();
       case 5:
         return renderInvestmentRangeStep();
-      case 6:
+      case 7:
         return renderCheckoutStep();
       default:
         return null;
