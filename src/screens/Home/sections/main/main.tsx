@@ -28,7 +28,7 @@ const MainSection: React.FC = () => {
       </div>
       <div className="Main_content">
         <div className="Main_main-text">
-          <h1 className="Main_h1">O FUTURO DA EDUCAÇÃO PASSA PRO VOCÊ</h1>
+          <h1 className="Main_h1">O FUTURO DA EDUCAÇÃO PASSA POR VOCÊ</h1>
           <h2 className="Main_h2">
             Conheça nosso programa de apadrinhamento, tanto para quem pode
             ajudar, quanto pra quem precisa de ajuda
