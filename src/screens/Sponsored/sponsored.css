@@ -48,6 +48,7 @@
 
 .Sponsored_textarea {
   padding: 5px;
+  outline: none;
 }
 
 .Sponsored_dropdown {

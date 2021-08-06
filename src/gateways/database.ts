@@ -6,6 +6,10 @@ class Database {
 
   private Sponsoreds: Array<Sponsored> = [];
 
+  public static getDatabase(): Database {
+    return new Database();
+  }
+
   public getSponsors(): Array<Sponsor> {
     return this.Sponsors;
   }
