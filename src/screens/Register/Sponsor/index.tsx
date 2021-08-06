@@ -148,12 +148,17 @@ const SponsorScreen: React.FC = () => {
       >
         <>
           <p className="Sponsor_p">Até quanto você deseja investir?</p>
-          <SliderInput
-            onChange={handleInvestmentRangeValueChange}
-            min={300}
-            max={10000}
-            currentIndex={investmentRangeValue}
-          />
+          <div className="Sponsor_slider-container">
+            <div className="Sponsor_slider">
+              <SliderInput
+                onChange={handleInvestmentRangeValueChange}
+                min={300}
+                max={10000}
+                currentIndex={investmentRangeValue}
+              />
+              <p className="Sponsor_slider-label">R$ {investmentRangeValue}</p>
+            </div>
+          </div>
         </>
       </RegisterBox>
     );
@@ -183,16 +188,15 @@ const SponsorScreen: React.FC = () => {
   const renderCurrentStep = () => {
     switch (step) {
       case 1:
-        // return renderNameStep();
-        return renderInvestmentRangeStep();
+        return renderNameStep();
       case 2:
         return renderEmailPhoneStep();
       case 3:
-        return renderDocumentStep();
-      case 4:
-        return renderInvestmentRangeStep();
-      case 5:
         return renderPasswordStep();
+      case 4:
+        return renderDocumentStep();
+      case 5:
+        return renderInvestmentRangeStep();
       default:
         return null;
     }
