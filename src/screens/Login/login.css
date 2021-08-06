@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
+.Login_error-message {
+  color: #ef5350;
+  padding-bottom: 24px;
+}
+
 .Login_content input {
   margin-bottom: 20px;
 }

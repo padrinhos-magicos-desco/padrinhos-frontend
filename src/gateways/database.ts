@@ -1,12 +1,35 @@
 import { Guid } from 'guid-typescript';
-import Sponsor from '../domain/sponsor';
+import Sponsor, { SponsorType } from '../domain/sponsor';
 import Sponsored from '../domain/sponsored';
 import { Sponsorship } from '../domain/sponsorship';
 
 class Database {
-  private Sponsors: Array<Sponsor> = [];
+  private Sponsors: Array<Sponsor> = [
+    new Sponsor(
+      'Padrinho',
+      'Magico',
+      'padrinho@magico.com',
+      '123456',
+      '2199999998',
+      SponsorType.Person,
+      '12345678901',
+      '4000'
+    ),
+  ];
 
-  private Sponsoreds: Array<Sponsored> = [];
+  private Sponsoreds: Array<Sponsored> = [
+    new Sponsored(
+      'Usuario',
+      'Teste',
+      'teste@teste.com',
+      '123456',
+      '2199999999',
+      'Ciência da Computação',
+      'Estou bem, obrigado!',
+      '1000',
+      'Sou muito legal'
+    ),
+  ];
 
   private Sponsorships: Array<Sponsorship> = [];
 
@@ -17,6 +40,14 @@ class Database {
       this.singleDatabase = new Database();
     }
     return this.singleDatabase;
+  }
+
+  public static getUserLogged(): Sponsored | Sponsor | null {
+    const userLoggedString = localStorage.getItem('userLogged');
+    if (!userLoggedString) {
+      return null;
+    }
+    return JSON.parse(userLoggedString);
   }
 
   // #region sponsors methods

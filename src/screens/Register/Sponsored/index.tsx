@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-import Database from '../../gateways/database';
-import SponsoredModel from '../../domain/sponsored';
+import Database from '../../../gateways/database';
+import SponsoredModel from '../../../domain/sponsored';
 
-import RegisterBox from '../../components/register-box';
-import Button from '../../components/button';
-import Logo from '../../components/logo';
-import Input from '../../components/input';
-import Dropdown from '../../components/dropdown';
+import RegisterBox from '../../../components/register-box';
+import Button from '../../../components/button';
+import Logo from '../../../components/logo';
+import Input from '../../../components/input';
+import Dropdown from '../../../components/dropdown';
 
 import './sponsored.css';
 
@@ -68,6 +68,9 @@ const SponsoredScreen: React.FC = () => {
 
       const db = Database.getDatabase();
       db.addSponsored(sponsored);
+
+      localStorage.setItem('userLogged', JSON.stringify(sponsored));
+      window.location.href = '/apadrinhado';
     }
     setStep(step + 1);
   };
@@ -143,6 +146,31 @@ const SponsoredScreen: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!passwordValue}
+      >
+        <>
+          <p className="Sponsored_p">Crie uma senha</p>
+          <div className="Sponsored_inputs">
+            <Input
+              placeholder="Senha"
+              type="password"
+              handleChange={handlePasswordInputChange}
+            />
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
+  const renderStep4 = () => {
+    if (step !== 4) {
+      return null;
+    }
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
         disabled={!courseValue}
       >
         <>
@@ -155,8 +183,8 @@ const SponsoredScreen: React.FC = () => {
     );
   };
 
-  const renderStep4 = () => {
-    if (step !== 4) {
+  const renderStep5 = () => {
+    if (step !== 5) {
       return null;
     }
 
@@ -183,8 +211,8 @@ const SponsoredScreen: React.FC = () => {
     );
   };
 
-  const renderStep5 = () => {
-    if (step !== 5) {
+  const renderStep6 = () => {
+    if (step !== 6) {
       return null;
     }
 
@@ -208,8 +236,8 @@ const SponsoredScreen: React.FC = () => {
     );
   };
 
-  const renderStep6 = () => {
-    if (step !== 6) {
+  const renderStep7 = () => {
+    if (step !== 7) {
       return null;
     }
 
@@ -234,43 +262,11 @@ const SponsoredScreen: React.FC = () => {
     );
   };
 
-  const renderStep7 = () => {
-    if (step !== 7) {
-      return null;
-    }
-
-    return (
-      <RegisterBox
-        imageUrl="/register-headset-image.png"
-        onContinue={handleContinue}
-        disabled={!passwordValue}
-      >
-        <>
-          <p className="Sponsored_p">Para finalizarmos, insira uma senha</p>
-          <div className="Sponsored_inputs">
-            <Input
-              placeholder="Senha"
-              type="password"
-              handleChange={handlePasswordInputChange}
-            />
-          </div>
-        </>
-      </RegisterBox>
-    );
-  };
-
   return (
     <div className="Sponsored_container">
       <div className="Sponsored_header">
         <Logo />
         <nav className="Sponsored_buttons">
-          {/* <Button
-            buttonText="Quero participar"
-            buttonColor="#00e88f"
-            borderColor="#00e88f"
-            buttonTextColor="#000"
-            url="/apadrinhado/cadastro"
-          /> */}
           <Button
             buttonText="Entrar"
             buttonColor="#000"

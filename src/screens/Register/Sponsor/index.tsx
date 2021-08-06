@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-import Database from '../../gateways/database';
-import SponsorModel, { SponsorType } from '../../domain/sponsor';
+import Database from '../../../gateways/database';
+import SponsorModel, { SponsorType } from '../../../domain/sponsor';
 
-import RegisterBox from '../../components/register-box';
-import Button from '../../components/button';
-import Logo from '../../components/logo';
-import Input from '../../components/input';
-import SliderInput from '../../components/slider-input';
+import RegisterBox from '../../../components/register-box';
+import Button from '../../../components/button';
+import Logo from '../../../components/logo';
+import Input from '../../../components/input';
+import SliderInput from '../../../components/slider-input';
 
 import './sponsor.css';
 
@@ -54,7 +54,7 @@ const SponsorScreen: React.FC = () => {
         phoneValue,
         documentValue.length > 11 ? SponsorType.Company : SponsorType.Person,
         documentValue,
-        1000
+        '1000'
         // investmentRangeValue
       );
 
@@ -202,20 +202,13 @@ const SponsorScreen: React.FC = () => {
       <div className="Sponsor_header">
         <Logo />
         <nav className="Sponsor_buttons">
-          {/* <Button
-            buttonText="Quero participar"
-            buttonColor="#00e88f"
-            borderColor="#00e88f"
-            buttonTextColor="#000"
-            url="/apadrinhado/cadastro"
-          /> */}
           <Button
             buttonText="Entrar"
             buttonColor="#000"
             borderColor="#fff"
             buttonTextColor="#fff"
             useBorder
-            url="/screen/100"
+            url="/login"
           />
         </nav>
       </div>
