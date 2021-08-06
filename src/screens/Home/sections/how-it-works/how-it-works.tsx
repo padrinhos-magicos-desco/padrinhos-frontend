@@ -4,7 +4,7 @@ import './how-it-works.css';
 
 const HowItWorksSection: React.FC = () => {
   return (
-    <section className="HowItWorks_container">
+    <section id="quero-participar" className="HowItWorks_container">
       <div className="HowItWork_title">Um título sobre como funciona.</div>
       <div className="HowItWork_card-container">
         <CTACard

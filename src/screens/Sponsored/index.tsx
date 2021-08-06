@@ -14,6 +14,8 @@ const Sponsored: React.FC = () => {
   const [emailValue, setEmailValue] = useState('');
   const [phoneValue, setPhoneValue] = useState('');
   const [courseValue, setCourseValue] = useState('');
+  const [myMomentTextValue, setMyMomentTextValue] = useState('');
+  const [momentBiographyValue, setBiographyValue] = useState('');
 
   const [step, setStep] = useState(1);
 
@@ -31,6 +33,12 @@ const Sponsored: React.FC = () => {
   };
   const handleCourseInputChange = (value: string) => {
     setCourseValue(value);
+  };
+  const handleMyMomentTextChange = (value: string) => {
+    setMyMomentTextValue(value);
+  };
+  const handleBiographyTextAreaChange = (value: string) => {
+    setBiographyValue(value);
   };
 
   const handleContinue = () => {
@@ -128,12 +136,42 @@ const Sponsored: React.FC = () => {
         onContinue={handleContinue}
       >
         <>
-          <p>
-            nome: {nameValue} {lastNameValue}
+          <p className="Sponsored_p">
+            Conta pra gente: como está seu momento agora?
           </p>
-          <p>email: {emailValue}</p>
-          <p>telefone: {phoneValue}</p>
-          <p>curso: {courseValue}</p>
+          <div className="Sponsored_textarea-container">
+            <textarea
+              className="Sponsored_textarea"
+              rows={8}
+              cols={100}
+              onChange={(e) => handleMyMomentTextChange(e.target.value)}
+            />
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
+  const renderStep5 = () => {
+    if (step !== 5) {
+      return null;
+    }
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
+      >
+        <>
+          <p className="Sponsored_p">Pergunta sobre a história de vida dele</p>
+          <div className="Sponsored_textarea-container">
+            <textarea
+              className="Sponsored_textarea"
+              rows={8}
+              cols={100}
+              onChange={(e) => handleBiographyTextAreaChange(e.target.value)}
+            />
+          </div>
         </>
       </RegisterBox>
     );
@@ -144,13 +182,13 @@ const Sponsored: React.FC = () => {
       <div className="Sponsored_header">
         <Logo />
         <nav className="Sponsored_buttons">
-          <Button
+          {/* <Button
             buttonText="Quero participar"
             buttonColor="#00e88f"
             borderColor="#00e88f"
             buttonTextColor="#000"
             url="/apadrinhado/register"
-          />
+          /> */}
           <Button
             buttonText="Entrar"
             buttonColor="#000"
@@ -165,6 +203,7 @@ const Sponsored: React.FC = () => {
       {renderStep2()}
       {renderStep3()}
       {renderStep4()}
+      {renderStep5()}
     </div>
   );
 };
