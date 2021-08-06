@@ -12,8 +12,9 @@ const BenefitsSection: React.FC = () => {
             <h1>1.</h1>
             <h2>Vantagem para o Brasil</h2>
             <p>
-              A plataforma padrinhos mágicos permite o aumento empregabilidade
-              empregabilidade no país e (..)
+              A plataforma permite o aumento empregabilidade no país, muda
+              índices de Renda e Trabalho e contribui para o Brasil abaixar seus
+              índices de vulnerabilidade social através do estudo.
             </p>
           </div>
           <div className="Benefits_item">
