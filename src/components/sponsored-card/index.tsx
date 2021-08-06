@@ -23,15 +23,28 @@ type Props = {
   progress?: number;
   desiredCourse: string;
   biography: string;
+  onClick?: (
+    progress: number,
+    desiredCourse: string,
+    biography: string
+  ) => void;
 };
 
 const SponsoredCard: React.FC<Props> = ({
   progress,
   desiredCourse,
   biography,
+  onClick,
 }: Props) => {
   return (
-    <div className="SponsoredCard_sponsored-card">
+    <div
+      className="SponsoredCard_sponsored-card"
+      role="button"
+      tabIndex={0}
+      onClick={() =>
+        onClick && onClick(progress || 0, desiredCourse, biography)
+      }
+    >
       <div className="SponsoredCard_header">
         <Avatar />
         <div className="SponsoredCard_header-title">
@@ -52,6 +65,7 @@ const SponsoredCard: React.FC<Props> = ({
 
 SponsoredCard.defaultProps = {
   progress: 0,
+  onClick: () => null,
 };
 
 export default SponsoredCard;
