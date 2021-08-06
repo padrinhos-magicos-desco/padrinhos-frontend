@@ -53,6 +53,11 @@
 
   letter-spacing: -0.6px;
   margin-top: 21px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   
   color: #000000;
 }

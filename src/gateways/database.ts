@@ -124,7 +124,7 @@ class Database {
       'Marketing',
       'As experiências acumuladas demonstram que a competitividade nas transações comerciais ainda não demonstrou convincentemente que vai participar na mudança do fluxo de informações.',
       750,
-      'Eu sou a Milena, sou de Barreirinhas no Maranhão, vim de escola pública e não tive condições de pagar a mensalidade do vestibular Descomplica. Estudei com vocês pelo youtube e passei para uma universidade pública, porém não tive condições de manter meus estudos devido a necessidade de deslocamento...',
+      'Eu sou a Milena, sou de Barreirinhas no Maranhão, vim de escola pública e não tive condições de pagar a mensalidade do vestibular Descomplica. Estudei com vocês pelo youtube e passei para uma universidade pública, porém não tive condições de manter meus estudos devido a necessidade de deslocamento! Hoje, gostaria de um suporte para estudar online na faculdade Descomplica.',
       89
     ),
     new Sponsored(
