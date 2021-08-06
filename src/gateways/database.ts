@@ -4,9 +4,23 @@ import Sponsored from '../domain/sponsored';
 import { Sponsorship } from '../domain/sponsorship';
 
 class Database {
+  public static loggedUser: Sponsor | Sponsored;
+
   private Sponsors: Array<Sponsor> = [];
 
-  private Sponsoreds: Array<Sponsored> = [];
+  private Sponsoreds: Array<Sponsored> = [
+    new Sponsored(
+      'Usuario',
+      'Teste',
+      'teste@teste.com',
+      '123456',
+      '2199999999',
+      'Ciência da Computação',
+      'Estou bem, obrigado!',
+      '1000',
+      'Sou muito legal'
+    ),
+  ];
 
   private Sponsorships: Array<Sponsorship> = [];
 

@@ -30,6 +30,7 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'prettier/prettier': [
       'error',

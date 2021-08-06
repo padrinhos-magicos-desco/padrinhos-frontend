@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-import Database from '../../gateways/database';
-import SponsoredModel from '../../domain/sponsored';
+import Database from '../../../gateways/database';
+import SponsoredModel from '../../../domain/sponsored';
 
-import RegisterBox from '../../components/register-box';
-import Button from '../../components/button';
-import Logo from '../../components/logo';
-import Input from '../../components/input';
-import Dropdown from '../../components/dropdown';
+import RegisterBox from '../../../components/register-box';
+import Button from '../../../components/button';
+import Logo from '../../../components/logo';
+import Input from '../../../components/input';
+import Dropdown from '../../../components/dropdown';
 
 import './sponsored.css';
 
@@ -264,13 +264,6 @@ const Sponsored: React.FC = () => {
       <div className="Sponsored_header">
         <Logo />
         <nav className="Sponsored_buttons">
-          {/* <Button
-            buttonText="Quero participar"
-            buttonColor="#00e88f"
-            borderColor="#00e88f"
-            buttonTextColor="#000"
-            url="/apadrinhado/register"
-          /> */}
           <Button
             buttonText="Entrar"
             buttonColor="#000"

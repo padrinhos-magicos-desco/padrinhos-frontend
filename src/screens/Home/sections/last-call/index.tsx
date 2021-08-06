@@ -21,7 +21,7 @@ const LastCall: React.FC = () => {
           buttonColor="#00e88f"
           borderColor="#00e88f"
           buttonTextColor="#000"
-          url="/apadrinhado/register"
+          url="/apadrinhado/registro"
         />
       </div>
     </section>
