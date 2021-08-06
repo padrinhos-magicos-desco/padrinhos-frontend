@@ -8,6 +8,7 @@ import Button from '../../../components/button';
 import Logo from '../../../components/logo';
 import Input from '../../../components/input';
 import SliderInput from '../../../components/slider-input';
+import Modal from '../../../components/modal';
 
 import './sponsor.css';
 
@@ -19,6 +20,7 @@ const SponsorScreen: React.FC = () => {
   const [documentValue, setDocumentValue] = useState('');
   const [investmentRangeValue, setInvestmentRangeValue] = useState(100);
   const [passwordValue, setPasswordValue] = useState('');
+  const [shouldShowModal, setShouldShowConfirmationModal] = useState(false);
 
   const [step, setStep] = useState(1);
 
@@ -46,6 +48,10 @@ const SponsorScreen: React.FC = () => {
 
   const handleContinue = () => {
     if (step === 5) {
+      setShouldShowConfirmationModal(true);
+    }
+
+    if (step === 6) {
       const sponsor = new SponsorModel(
         nameValue,
         lastNameValue,
@@ -66,6 +72,7 @@ const SponsorScreen: React.FC = () => {
       localStorage.setItem('userLogged', JSON.stringify(sponsor));
       window.location.href = '/padrinho';
     }
+
     setStep(step + 1);
   };
 
@@ -77,9 +84,14 @@ const SponsorScreen: React.FC = () => {
         disabled={!nameValue || !lastNameValue}
       >
         <>
+          <h2 className="Sponsor_h2">
+            Gostaríamos de saber um pouquinho mais de você
+          </h2>
           <p className="Sponsor_p">
-            Olá! Todo mundo quer saber, como te chamamos?
+            Adoramos que está aqui! Parabéns pela sua iniciativa. Como podemos
+            te chamar?
           </p>
+
           <div className="Sponsor_inputs">
             <Input
               key="name"
@@ -107,7 +119,12 @@ const SponsorScreen: React.FC = () => {
         disabled={!emailValue || !phoneValue}
       >
         <>
-          <p className="Sponsor_p">Como entramos em contato com você?</p>
+          <h2 className="Sponsor_h2">
+            Precisamos saber um pouquinho mais de você
+          </h2>
+          <p className="Sponsor_p">
+            Conta pra gente seu e-mail e telefone de contato
+          </p>
           <div className="Sponsor_inputs">
             <Input
               key="email"
@@ -135,7 +152,9 @@ const SponsorScreen: React.FC = () => {
         disabled={documentValue.length < 11}
       >
         <>
-          <p className="Sponsor_p">Qual curso você gostaria de fazer?</p>
+          <h2 className="Sponsor_h2">
+            Você que ajudar como Pessoa Física ou Jurídica?
+          </h2>
           <div className="Sponsor_dropdown">
             <Input
               key="cpf"
@@ -157,7 +176,7 @@ const SponsorScreen: React.FC = () => {
         disabled={!investmentRangeValue}
       >
         <>
-          <p className="Sponsor_p">Até quanto você deseja investir?</p>
+          <h2 className="Sponsor_h2">Quanto você deseja investir?</h2>
           <div className="Sponsor_slider-container">
             <div className="Sponsor_slider">
               <SliderInput
@@ -182,7 +201,11 @@ const SponsorScreen: React.FC = () => {
         disabled={!passwordValue}
       >
         <>
-          <p className="Sponsor_p">Para finalizarmos, insira uma senha</p>
+          <h2 className="Sponsor_h2">Crie uma senha</h2>
+          <p className="Sponsor_p">
+            Com esse login, você vai poder acessar uma área onde terá contato
+            com seus apadrinhados
+          </p>
           <div className="Sponsor_inputs">
             <Input
               key="senha"
@@ -247,9 +270,9 @@ const SponsorScreen: React.FC = () => {
       case 2:
         return renderEmailPhoneStep();
       case 3:
-        return renderPasswordStep();
-      case 4:
         return renderDocumentStep();
+      case 4:
+        return renderPasswordStep();
       case 5:
         return renderInvestmentRangeStep();
       case 6:
@@ -259,10 +282,30 @@ const SponsorScreen: React.FC = () => {
     }
   };
 
+  const renderModal = () => {
+    if (!shouldShowModal) return null;
+    return (
+      <Modal onCloseClick={() => setShouldShowConfirmationModal(false)}>
+        <>
+          <div className="Sponsor_modal-content">
+            <h3 className="Sponsor_modal-title">Confirmação de compromisso</h3>
+            <p className="Sponsor_modal-text">
+              A partir desse momento, você se compromete a ajudar no futuro da
+              educação no Brasil, formando novos profissionais para as mais
+              diversas carreiras
+            </p>
+            <Button buttonText="Quero participar" onClick={handleContinue} />
+          </div>
+        </>
+      </Modal>
+    );
+  };
+
   return (
     <div className="Sponsor_container">
       <div className="Sponsor_header">
         <Logo />
+
         <nav className="Sponsor_buttons">
           {/* <Button
             buttonText="Quero participar"
@@ -281,6 +324,7 @@ const SponsorScreen: React.FC = () => {
           />
         </nav>
       </div>
+      {renderModal()}
       {renderCurrentStep()}
     </div>
   );

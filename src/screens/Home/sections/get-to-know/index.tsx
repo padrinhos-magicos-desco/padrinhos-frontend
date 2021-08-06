@@ -9,8 +9,8 @@ const GetToKnow: React.FC = () => {
           Conheça a facul e a pós descomplica
         </div>
         <div className="GetToKnow_subtitle">
-          Um copy que fale sobre os produtos que estão sendo contemplados nesse
-          rolê todo
+          Estude com quem tem ensino de alto padrão por um preço que cabe no
+          bolso
         </div>
       </div>
 
