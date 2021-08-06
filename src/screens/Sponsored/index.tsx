@@ -269,7 +269,7 @@ const Sponsored: React.FC = () => {
             buttonColor="#00e88f"
             borderColor="#00e88f"
             buttonTextColor="#000"
-            url="/apadrinhado/register"
+            url="/apadrinhado/cadastro"
           /> */}
           <Button
             buttonText="Entrar"

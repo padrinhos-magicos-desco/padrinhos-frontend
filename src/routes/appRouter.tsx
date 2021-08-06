@@ -10,7 +10,8 @@ const AppRouter = () => {
     <Router>
       <Route path="/" exact component={Home} />
       <Route path="/login" exact component={Login} />
-      <Route path="/apadrinhado/register" exact component={Sponsored} />
+      <Route path="/apadrinhado/cadastro" exact component={Sponsored} />
+      <Route path="/padrinho/cadastro" exact component={Sponsored} />
       <Route path="/screen/:id" exact component={Screen} />
       <Route path="/sandbox" exact component={Sandbox} />
     </Router>
