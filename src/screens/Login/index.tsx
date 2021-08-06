@@ -30,13 +30,13 @@ const LoginScreen: React.FC<Props> = () => {
     const user = db.getLogin(emailValue, passwordValue);
 
     if (user && user instanceof Sponsor) {
-      Database.loggedUser = user;
+      localStorage.setItem('userLogged', JSON.stringify(user));
       window.location.href = '/padrinho';
       return null;
     }
 
     if (user && user instanceof Sponsored) {
-      Database.loggedUser = user;
+      localStorage.setItem('userLogged', JSON.stringify(user));
       window.location.href = '/apadrinhado';
       return null;
     }
