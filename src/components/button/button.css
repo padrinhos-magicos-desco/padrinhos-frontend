@@ -10,10 +10,6 @@
   cursor: pointer;
 }
 
-.Button_container a {
-  text-decoration: none;
-}
-
 .Button_container p {
   font-style: normal;
   font-weight: 600;
