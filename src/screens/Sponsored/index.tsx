@@ -16,6 +16,7 @@ const Sponsored: React.FC = () => {
   const [courseValue, setCourseValue] = useState('');
   const [myMomentTextValue, setMyMomentTextValue] = useState('');
   const [biographyValue, setBiographyValue] = useState('');
+  const [incomeValue, setIncomeValue] = useState('');
 
   const [step, setStep] = useState(1);
 
@@ -39,6 +40,9 @@ const Sponsored: React.FC = () => {
   };
   const handleBiographyTextAreaChange = (value: string) => {
     setBiographyValue(value);
+  };
+  const handleIncomeInputChange = (value: string) => {
+    setIncomeValue(value);
   };
 
   const handleContinue = () => {
@@ -165,6 +169,31 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!incomeValue}
+      >
+        <>
+          <p className="Sponsored_p">Pergunta sobre a renda familiar dele</p>
+          <div className="Sponsored_textarea-container">
+            <Input
+              placeholder="Renda familiar"
+              type="text"
+              handleChange={handleIncomeInputChange}
+            />
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
+  const renderStep6 = () => {
+    if (step !== 6) {
+      return null;
+    }
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
         disabled={!biographyValue}
       >
         <>
@@ -209,6 +238,7 @@ const Sponsored: React.FC = () => {
       {renderStep3()}
       {renderStep4()}
       {renderStep5()}
+      {renderStep6()}
     </div>
   );
 };
