@@ -1,10 +1,6 @@
-import ReactSlider from 'react-slider';
-import './slider-input.css';
-
 type Props = {
   onChange: (value: number) => void;
   currentIndex: number;
-  defaultValue: number;
   min: number;
   max: number;
 };
@@ -12,21 +8,24 @@ type Props = {
 const SliderInput: React.FC<Props> = ({
   onChange,
   currentIndex,
-  defaultValue,
   min,
   max,
 }: Props) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    onChange(+event.target.value);
+  };
+
   return (
-    <ReactSlider
-      className="Slider_container"
-      thumbClassName="Slider_thumb"
-      trackClassName="Slider_track"
-      onChange={onChange}
-      value={currentIndex}
-      min={min}
-      max={max}
-      defaultValue={defaultValue}
-    />
+    <div className="SliderInput_container">
+      <input
+        type="range"
+        min={min}
+        max={max}
+        value={currentIndex}
+        className="SliderInput_slider"
+        onChange={handleChange}
+      />
+    </div>
   );
 };
 
