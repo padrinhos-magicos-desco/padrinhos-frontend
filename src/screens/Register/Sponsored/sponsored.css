@@ -1,5 +1,5 @@
-.Sponsored_p {
-  padding: 40px;
+.Sponsored_h2 {
+  padding: 40px 40px 10px 40px;
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
@@ -7,6 +7,17 @@
   letter-spacing: -2.4px;
 
   color: #111111;
+}
+
+.Sponsored_p {
+  padding: 20px 40px 10px 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+
+  color: #666666;
 }
 
 .Sponsored_container {
