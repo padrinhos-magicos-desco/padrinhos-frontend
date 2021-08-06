@@ -7,7 +7,7 @@ class Sponsored extends BasePerson {
 
   public Biography: string;
 
-  public MonthlyIncome: string;
+  public MonthlyIncome: number;
 
   public Progress?: number = 0;
 
@@ -19,7 +19,7 @@ class Sponsored extends BasePerson {
     phone: string,
     desiredCourse: string,
     myMoment: string,
-    monthlyIncome: string,
+    monthlyIncome: number,
     biography: string,
     progress?: number
   ) {

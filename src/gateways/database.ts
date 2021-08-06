@@ -27,7 +27,7 @@ class Database {
       '2197881245',
       'Engenharia da Computação',
       'Nesse pull request, o último pull request desse SCRUM causou o bug da execução parelela de funções em multi-threads.',
-      '900',
+      900,
       'Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Sapien in monti palavris qui num significa nadis i pareci latim.',
       75
     ),
@@ -39,7 +39,7 @@ class Database {
       '69994944231',
       'Administração',
       'A equipe de suporte precisa saber que a normalização da data deletou todas as entradas no fechamento automático das tags.',
-      '700',
+      700,
       'Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.',
       40
     ),
@@ -51,7 +51,7 @@ class Database {
       '41995798525',
       'Pedagogia',
       'Por outro lado, a percepção das dificuldades assume importantes posições no estabelecimento dos conhecimentos estratégicos para atingir a excelência.',
-      '1500',
+      1500,
       'Quem num gosta di mé, boa gentis num é. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Paisis, filhis, espiritis santis. Não sou faixa preta cumpadi, sou preto inteiris, inteiris.',
       33
     ),
@@ -63,7 +63,7 @@ class Database {
       '68984214249',
       'Engenharia da Computação',
       'A prática cotidiana prova que a competitividade nas transações comerciais maximiza as possibilidades por conta do processo de comunicação como um todo.',
-      '900',
+      900,
       'Casamentiss faiz malandris se pirulitá. Manduma pindureta quium dia nois paga. Delegadis gente finis, bibendum egestas augue arcu ut est. Interagi no mé, cursus quis, vehicula ac nisi.',
       12
     ),
@@ -75,7 +75,7 @@ class Database {
       '51988183420',
       'Pedagogia',
       'Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a necessidade de renovação processual aponta para a melhoria do remanejamento dos quadros funcionais.',
-      '1600',
+      1600,
       'Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Sapien in monti palavris qui num significa nadis i pareci latim.',
       36
     ),
@@ -87,7 +87,7 @@ class Database {
       '61986621230',
       'Administração',
       'Evidentemente, o início da atividade geral de formação de atitudes é uma das consequências do orçamento setorial.',
-      '2300',
+      2300,
       'Quem manda na minha terra sou euzis! Aenean aliquam molestie leo, vitae iaculis nisl. Manduma pindureta quium dia nois paga. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.',
       54
     ),
@@ -99,7 +99,7 @@ class Database {
       '92994132912',
       'Marketing',
       'Acima de tudo, é fundamental ressaltar que o comprometimento entre as equipes cumpre um papel essencial na formulação das formas de ação.',
-      '1100',
+      1100,
       'Viva Forevis aptent taciti sociosqu ad litora torquent. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Detraxit consequat et quo num tendi nada. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.',
       35
     ),
@@ -111,7 +111,7 @@ class Database {
       '2197884565',
       'Engenharia da Computação',
       'Estou bem, obrigado!',
-      '900',
+      900,
       'Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Quem num gosta di mé, boa gentis num é. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. A ordem dos tratores não altera o pão duris.',
       87
     ),
@@ -123,7 +123,7 @@ class Database {
       '55991898188',
       'Marketing',
       'As experiências acumuladas demonstram que a competitividade nas transações comerciais ainda não demonstrou convincentemente que vai participar na mudança do fluxo de informações.',
-      '750',
+      750,
       'In elementis mé pra quem é amistosis quis leo. Suco de cevadiss deixa as pessoas mais interessantis. Quem num gosta di mé, boa gentis num é. Quem manda na minha terra sou euzis!',
       89
     ),
@@ -135,7 +135,7 @@ class Database {
       '84986816372',
       'Administração',
       'O que temos que ter sempre em mente é que o comprometimento entre as equipes oferece uma interessante oportunidade para verificação das novas proposições.',
-      '1250',
+      1250,
       'Quem num gosta di mé, boa gentis num é. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.',
       10
     ),

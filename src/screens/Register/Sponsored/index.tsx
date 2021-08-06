@@ -10,6 +10,7 @@ import Input from '../../../components/input';
 import Dropdown from '../../../components/dropdown';
 
 import './sponsored.css';
+import SliderInput from '../../../components/slider-input';
 
 const SponsoredScreen: React.FC = () => {
   const [nameValue, setNameValue] = useState('');
@@ -19,7 +20,7 @@ const SponsoredScreen: React.FC = () => {
   const [courseValue, setCourseValue] = useState('');
   const [myMomentTextValue, setMyMomentTextValue] = useState('');
   const [biographyValue, setBiographyValue] = useState('');
-  const [incomeValue, setIncomeValue] = useState('');
+  const [incomeValue, setIncomeValue] = useState(1000);
   const [passwordValue, setPasswordValue] = useState('');
 
   const [step, setStep] = useState(1);
@@ -45,7 +46,7 @@ const SponsoredScreen: React.FC = () => {
   const handleBiographyTextAreaChange = (value: string) => {
     setBiographyValue(value);
   };
-  const handleIncomeInputChange = (value: string) => {
+  const handleIncomeInputChange = (value: number) => {
     setIncomeValue(value);
   };
   const handlePasswordInputChange = (value: string) => {
@@ -240,12 +241,16 @@ const SponsoredScreen: React.FC = () => {
           <h2 className="Sponsored_h2">
             Qual é a renda mensal da sua família atualmente?
           </h2>
-          <div className="Sponsored_inputs">
-            <Input
-              placeholder="Renda familiar em reais"
-              type="text"
-              handleChange={handleIncomeInputChange}
-            />
+          <div className="Sponsor_slider-container">
+            <div className="Sponsor_slider">
+              <SliderInput
+                onChange={handleIncomeInputChange}
+                min={300}
+                max={10000}
+                currentIndex={incomeValue}
+              />
+              <p className="Sponsor_slider-label">R$ {incomeValue}</p>
+            </div>
           </div>
         </>
       </RegisterBox>
