@@ -1,5 +1,5 @@
-.Sponsor_p {
-  padding: 40px;
+.Sponsor_h2 {
+  padding: 40px 40px 10px 40px;
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
@@ -7,6 +7,17 @@
   letter-spacing: -2.4px;
 
   color: #111111;
+}
+
+.Sponsor_p {
+  padding: 20px 40px 10px 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+
+  color: #666666;
 }
 
 .Sponsor_container {
@@ -35,6 +46,19 @@
   justify-content: space-between;
 
   padding: 30px 40px;
+}
+
+.Sponsor_checkout-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 40px;
+}
+
+.Sponsor_checkout-fullsize-inputs > input {
+  width: 100%
 }
 
 .Sponsor_textarea-container {
@@ -93,4 +117,32 @@
 
 .Sponsor_container .RegisterBox_container {
   margin-top: 30px;
+}
+
+.Sponsor_modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+
+.Sponsor_modal-text {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -0.6px;
+  color: #666666;
+}
+
+.Sponsor_modal-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -1.2px;
 }

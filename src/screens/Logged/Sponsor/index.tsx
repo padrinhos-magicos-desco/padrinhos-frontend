@@ -1,23 +1,7 @@
+import SponsoredCard from '../../../components/sponsored-card';
 import Database from '../../../gateways/database';
+
 import './sponsor.css';
-
-const containerStyles = {
-  height: 20,
-  width: '100%',
-  backgroundColor: '#DDDDDD',
-  borderRadius: 50,
-};
-
-const fillerStyles = {
-  height: '100%',
-  backgroundColor: '#00E88F',
-  borderRadius: 'inherit',
-};
-
-const labelStyles = {
-  padding: 5,
-  color: 'black',
-};
 
 const Sponsor: React.FC = () => {
   if (!Database.getUserLogged()) {
@@ -43,20 +27,11 @@ const Sponsor: React.FC = () => {
             return null;
           }
           return (
-            <div className="LoggedSponsor_sponsored-card">
-              <div className="LoggedSponsor_sponsored-progress">
-                <div style={containerStyles}>
-                  <div
-                    style={{ ...fillerStyles, width: `${s.Progress}%` || 0 }}
-                  >
-                    <span style={labelStyles}>{`${s.Progress || 0}%`}</span>
-                  </div>
-                </div>
-                <h1 className="LoggedSponsor_title">{s.DesiredCourse}</h1>
-              </div>
-
-              <p className="LoggedSponsor_description">{s.Biography}</p>
-            </div>
+            <SponsoredCard
+              progress={s.Progress}
+              desiredCourse={s.DesiredCourse}
+              biography={s.Biography}
+            />
           );
         })}
       </div>
