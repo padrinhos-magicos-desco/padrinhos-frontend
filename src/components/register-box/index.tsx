@@ -24,7 +24,7 @@ const RegisterBox: React.FC<Props> = ({
             <button
               className={disabled ? 'disabled' : ''}
               type="button"
-              onClick={onContinue}
+              onClick={!disabled ? onContinue : undefined}
             >
               Continuar
             </button>

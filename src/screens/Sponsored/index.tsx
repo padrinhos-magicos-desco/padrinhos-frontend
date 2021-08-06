@@ -15,7 +15,7 @@ const Sponsored: React.FC = () => {
   const [phoneValue, setPhoneValue] = useState('');
   const [courseValue, setCourseValue] = useState('');
   const [myMomentTextValue, setMyMomentTextValue] = useState('');
-  const [momentBiographyValue, setBiographyValue] = useState('');
+  const [biographyValue, setBiographyValue] = useState('');
 
   const [step, setStep] = useState(1);
 
@@ -54,6 +54,7 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!nameValue && !lastNameValue}
       >
         <>
           <p className="Sponsored_p">
@@ -85,6 +86,7 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!emailValue && !phoneValue}
       >
         <>
           <p className="Sponsored_p">Como entramos em contato com você?</p>
@@ -114,6 +116,7 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!courseValue}
       >
         <>
           <p className="Sponsored_p">Qual curso você gostaria de fazer?</p>
@@ -134,6 +137,7 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!myMomentTextValue}
       >
         <>
           <p className="Sponsored_p">
@@ -161,6 +165,7 @@ const Sponsored: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!biographyValue}
       >
         <>
           <p className="Sponsored_p">Pergunta sobre a história de vida dele</p>
