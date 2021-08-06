@@ -11,8 +11,12 @@
   height: 100%;
 }
 
-.RegisterBox_footer button {
+.RegisterBox_body {
   position: relative;
+}
+
+.RegisterBox_footer button {
+  position: absolute;
   bottom: 0;
   border: 0;
   background-color: #00E88F;
