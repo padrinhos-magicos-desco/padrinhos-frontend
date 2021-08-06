@@ -20,18 +20,18 @@ const Button: React.FC<Props> = ({
   url,
 }: Props) => {
   return (
-    <div
-      className="Button_container"
-      style={{
-        backgroundColor: buttonColor,
-        borderColor,
-        borderWidth: useBorder ? '1.5px' : '0px',
-      }}
-    >
-      <Link to={url}>
+    <Link to={url}>
+      <div
+        className="Button_container"
+        style={{
+          backgroundColor: buttonColor,
+          borderColor,
+          borderWidth: useBorder ? '1.5px' : '0px',
+        }}
+      >
         <p style={{ color: buttonTextColor }}>{buttonText}</p>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 

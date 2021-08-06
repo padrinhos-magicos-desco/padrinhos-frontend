@@ -8,6 +8,10 @@ body {
   background: #191a1a;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: Aprova;
   src: url(./fonts/Aprova-Regular.otf);
@@ -34,7 +38,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Aprova;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 code {
