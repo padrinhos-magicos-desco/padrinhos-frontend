@@ -11,7 +11,7 @@ import Dropdown from '../../components/dropdown';
 
 import './sponsored.css';
 
-const Sponsored: React.FC = () => {
+const SponsoredScreen: React.FC = () => {
   const [nameValue, setNameValue] = useState('');
   const [lastNameValue, setLastNameValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
@@ -292,4 +292,4 @@ const Sponsored: React.FC = () => {
   );
 };
 
-export default Sponsored;
+export default SponsoredScreen;

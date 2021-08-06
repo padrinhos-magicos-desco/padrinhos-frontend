@@ -7,16 +7,17 @@ import RegisterBox from '../../components/register-box';
 import Button from '../../components/button';
 import Logo from '../../components/logo';
 import Input from '../../components/input';
+import SliderInput from '../../components/slider-input';
 
 import './sponsored.css';
 
-const Sponsor: React.FC = () => {
+const SponsorScreen: React.FC = () => {
   const [nameValue, setNameValue] = useState('');
   const [lastNameValue, setLastNameValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
   const [phoneValue, setPhoneValue] = useState('');
   const [documentValue, setDocumentValue] = useState('');
-  // const [investmentRangeValue, setInvestmentRangeValue] = useState(100);
+  const [investmentRangeValue, setInvestmentRangeValue] = useState(100);
   const [passwordValue, setPasswordValue] = useState('');
 
   const [step, setStep] = useState(1);
@@ -39,9 +40,9 @@ const Sponsor: React.FC = () => {
   const handlePasswordInputChange = (value: string) => {
     setPasswordValue(value);
   };
-  // const handleInvestmentRangeValueChange = (value: number) => {
-  //   setInvestmentRangeValue(value);
-  // };
+  const handleInvestmentRangeValueChange = (value: number) => {
+    setInvestmentRangeValue(value);
+  };
 
   const handleContinue = () => {
     if (step === 7) {
@@ -159,10 +160,17 @@ const Sponsor: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
-        // disabled={!investmentRangeValue}
+        disabled={!investmentRangeValue}
       >
         <>
           <p className="Sponsor_p">Até quanto você deseja investir?</p>
+          <SliderInput
+            onChange={handleInvestmentRangeValueChange}
+            min={300}
+            max={10000}
+            currentIndex={investmentRangeValue}
+            defaultValue={800}
+          />
         </>
       </RegisterBox>
     );
@@ -224,4 +232,4 @@ const Sponsor: React.FC = () => {
   );
 };
 
-export default Sponsor;
+export default SponsorScreen;
