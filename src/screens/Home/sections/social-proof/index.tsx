@@ -16,19 +16,19 @@ const SocialProof: React.FC = () => {
         <TestimonialCard
           name="João Souza"
           subtitle="Faculdade Descomplica"
-          testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+          testimonial="Sem meu padrinho, não teria tido a chance de estudar o que sempre quis"
           image="/pessoa2.png"
         />
         <TestimonialCard
           name="Márcia Silva"
           subtitle="Pós Graduação Descomplica"
-          testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+          testimonial="Meu padrinho me deu a oportunidade de seguir um sonho antigo: estudar de novo"
           image="/pessoa1.png"
         />
         <TestimonialCard
           name="Marco"
           subtitle="Faculdade Descomplica"
-          testimonial={`"Um depoimento muito massa vem aqui dizendo o quanto ele é grato"`}
+          testimonial="Me conectar com o mercado de trabalho ficou mais fácil com meu padrinho"
           image="/pessoa3.png"
         />
       </div>
