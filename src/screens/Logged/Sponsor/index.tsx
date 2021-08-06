@@ -16,7 +16,7 @@ const fillerStyles = {
 
 const labelStyles = {
   padding: 5,
-  color: 'white',
+  color: 'black',
 };
 
 const Sponsor: React.FC = () => {
