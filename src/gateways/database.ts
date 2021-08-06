@@ -146,6 +146,32 @@ class Database {
 
   private static singleDatabase: Database | undefined;
 
+  public serializeDB(): void {
+    localStorage.setItem(
+      'database',
+      JSON.stringify({
+        sponsors: this.Sponsors,
+        sponsoreds: this.Sponsoreds,
+      })
+    );
+  }
+
+  public deserializeDB(): void {
+    const toParse = localStorage.getItem('database');
+    if (!toParse) {
+      return;
+    }
+    const database = JSON.parse(toParse);
+
+    if (database.sponsor) {
+      this.Sponsors = database.sponsor;
+    }
+
+    if (database.sponsoreds) {
+      this.Sponsoreds = database.sponsoreds || [];
+    }
+  }
+
   public static getDatabase(): Database {
     if (!this.singleDatabase) {
       this.singleDatabase = new Database();
@@ -221,14 +247,34 @@ class Database {
       (s) => s.Email === email && s.Password === password
     );
     if (sponsor) {
-      return sponsor;
+      return new Sponsor(
+        sponsor.Name,
+        sponsor.LastName,
+        sponsor.Email,
+        sponsor.Password,
+        sponsor.Phone,
+        sponsor.Type,
+        sponsor.Document,
+        sponsor.InvestmentRange
+      );
     }
 
     const sponsored = this.Sponsoreds.find(
       (s) => s.Email === email && s.Password === password
     );
+
     if (sponsored) {
-      return sponsored;
+      return new Sponsored(
+        sponsored.Name,
+        sponsored.LastName,
+        sponsored.Email,
+        sponsored.Password,
+        sponsored.Phone,
+        sponsored.DesiredCourse,
+        sponsored.MyMoment,
+        sponsored.MonthlyIncome,
+        sponsored.Biography
+      );
     }
 
     return null;
