@@ -181,8 +181,8 @@ const SponsoredScreen: React.FC = () => {
         disabled={!courseValue}
       >
         <>
-          <h2 className="Sponsored_h2">Qual curso você quer?</h2>
-          <p className="Sponsored_p">Tá precisando de uma força?</p>
+          <h2 className="Sponsored_h2">Qual curso você pretende cursar?</h2>
+          <p className="Sponsored_p">Precisamos saber como te alocar melhor</p>
           <div className="Sponsored_dropdown">
             <Dropdown handleChange={handleCourseInputChange} />
           </div>
@@ -206,7 +206,10 @@ const SponsoredScreen: React.FC = () => {
           <h2 className="Sponsored_h2">
             Conta pra gente: como está seu momento agora?
           </h2>
-          <p className="Sponsored_p">Tá precisando de uma força?</p>
+          <p className="Sponsored_p">
+            Faça um breve resumo contando sobre seu trabalho, estudos, carreira,
+            etc.
+          </p>
           <div className="Sponsored_textarea-container">
             <textarea
               className="Sponsored_textarea"
@@ -232,8 +235,9 @@ const SponsoredScreen: React.FC = () => {
         disabled={!incomeValue}
       >
         <>
-          <h2 className="Sponsored_h2">Pergunta sobre a renda familiar dele</h2>
-          <p className="Sponsored_p">Tá precisando de uma força?</p>
+          <h2 className="Sponsored_h2">
+            Qual é a renda mensal da sua família atualmente?
+          </h2>
           <div className="Sponsored_inputs">
             <Input
               placeholder="Renda familiar em reais"
@@ -258,10 +262,10 @@ const SponsoredScreen: React.FC = () => {
         disabled={!biographyValue}
       >
         <>
-          <h2 className="Sponsored_h2">
-            Pergunta sobre a história de vida dele
-          </h2>
-          <p className="Sponsored_p">Tá precisando de uma força?</p>
+          <h2 className="Sponsored_h2">Quem é você?</h2>
+          <p className="Sponsored_p">
+            Conte pra gente um pouco da sua história de vida
+          </p>
           <div className="Sponsored_textarea-container">
             <textarea
               className="Sponsored_textarea"
