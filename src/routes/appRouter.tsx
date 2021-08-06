@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from '../screens/Home';
 import Screen from '../screens/Screen';
-import SponsoredRegister from '../screens/Register/Sponsored';
+import SponsoredScreen from '../screens/Register/Sponsored';
+import SponsorScreen from '../screens/Register/Sponsor';
 import Sponsored from '../screens/Logged/Sponsored';
 import Sponsor from '../screens/Logged/Sponsor';
 import Login from '../screens/Login';
@@ -12,13 +13,15 @@ const AppRouter = () => {
     <Router>
       <Route path="/" exact component={Home} />
       <Route path="/login" exact component={Login} />
-      <Route path="/apadrinhado/registro" exact component={SponsoredRegister} />
+      <Route path="/apadrinhado/cadastro" exact component={SponsoredScreen} />
+      <Route path="/padrinho/cadastro" exact component={SponsorScreen} />
       <Route path="/screen/:id" exact component={Screen} />
 
       <Route path="/apadrinhado" exact component={Sponsored} />
       <Route path="/padrinho" exact component={Sponsor} />
 
       <Route path="/sandbox" exact component={Sandbox} />
+      <Route path="/screen/:id" exact component={Screen} />
     </Router>
   );
 };

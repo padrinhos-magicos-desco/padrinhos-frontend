@@ -1,0 +1,73 @@
+.Sponsor_p {
+  padding: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2.4px;
+
+  color: #111111;
+}
+
+.Sponsor_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.Sponsor_header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-top: 30px;
+}
+
+.Sponsor_inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px 40px;
+}
+
+.Sponsor_textarea-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px 40px;
+}
+
+.Sponsor_textarea {
+  padding: 5px;
+  outline: none;
+}
+
+.Sponsor_dropdown {
+  padding: 30px 40px;
+}
+
+.Sponsor_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.Sponsor_buttons div {
+  width: 160px;
+}
+
+.Sponsor_buttons div:last-child {
+  margin-left: 20px;
+}
+
+.Sponsor_container .RegisterBox_container {
+  margin-top: 30px;
+}

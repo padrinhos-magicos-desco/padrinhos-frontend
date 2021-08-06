@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import './button.css';
 
@@ -10,6 +11,7 @@ type Props = {
   useBorder?: boolean;
   url?: string;
   onClick?: () => null;
+  isAnchor?: boolean;
 };
 
 const Button: React.FC<Props> = ({
@@ -20,9 +22,20 @@ const Button: React.FC<Props> = ({
   useBorder,
   url,
   onClick,
+  isAnchor,
 }: Props) => {
   const render = () => {
     if (url) {
+      const linkContent = (
+        <p style={{ color: buttonTextColor }}>{buttonText}</p>
+      );
+
+      const link = isAnchor ? (
+        <Link to={url}>{linkContent}</Link>
+      ) : (
+        <HashLink to={url}>{linkContent}</HashLink>
+      );
+
       return (
         <Link to={url}>
           <div
@@ -33,7 +46,7 @@ const Button: React.FC<Props> = ({
               borderWidth: useBorder ? '1.5px' : '0px',
             }}
           >
-            <p style={{ color: buttonTextColor }}>{buttonText}</p>
+            {link}
           </div>
         </Link>
       );
@@ -66,6 +79,7 @@ Button.defaultProps = {
   useBorder: false,
   url: '',
   onClick: () => null,
+  isAnchor: false,
 };
 
 export default Button;

@@ -1,4 +1,4 @@
-import { Sponsor } from './sponsor';
+import Sponsor from './sponsor';
 import Sponsored from './sponsored';
 
 // PF e PJ podem escolher uma pessoa da lista e patrocinar com um valor.

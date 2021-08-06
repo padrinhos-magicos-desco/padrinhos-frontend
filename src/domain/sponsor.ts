@@ -1,8 +1,6 @@
 import BasePerson from './base-person';
 
-export class Sponsor extends BasePerson {
-  public Address: string;
-
+class Sponsor extends BasePerson {
   public Type: SponsorType;
 
   // CPF ou CNPJ
@@ -16,18 +14,18 @@ export class Sponsor extends BasePerson {
     email: string,
     password: string,
     phone: string,
-    address: string,
     type: SponsorType,
     document: string,
     investmentRange: number
   ) {
     super(name, lastName, email, password, phone);
-    this.Address = address;
     this.Type = type;
     this.Document = document;
     this.InvestmentRange = investmentRange;
   }
 }
+
+export default Sponsor;
 
 export enum SponsorType {
   Person,

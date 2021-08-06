@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
-import { Sponsor } from '../../domain/sponsor';
+import Sponsor from '../../domain/sponsor';
 import Sponsored from '../../domain/sponsored';
 import Database from '../../gateways/database';
 import Input from '../../components/input';
@@ -13,7 +13,7 @@ import './login.css';
 type TParams = { id: string };
 type Props = RouteComponentProps<TParams>;
 
-const Login: React.FC<Props> = () => {
+const LoginScreen: React.FC<Props> = () => {
   const [emailValue, setEmailValue] = useState('');
   const [passwordValue, setPasswordValue] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -67,4 +67,4 @@ const Login: React.FC<Props> = () => {
   );
 };
 
-export default Login;
+export default LoginScreen;

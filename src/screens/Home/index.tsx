@@ -8,7 +8,7 @@ import Footer from './sections/footer';
 import './home.css';
 import MainSection from './sections/main/main';
 
-const Home: React.FC = () => {
+const HomeScreen: React.FC = () => {
   return (
     <div className="Home_container">
       <MainSection />
@@ -22,4 +22,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomeScreen;

@@ -1,25 +1,23 @@
 import { useState } from 'react';
 
 import Database from '../../../gateways/database';
-import SponsoredModel from '../../../domain/sponsored';
+import SponsorModel, { SponsorType } from '../../../domain/sponsor';
 
 import RegisterBox from '../../../components/register-box';
 import Button from '../../../components/button';
 import Logo from '../../../components/logo';
 import Input from '../../../components/input';
-import Dropdown from '../../../components/dropdown';
+import SliderInput from '../../../components/slider-input';
 
-import './sponsored.css';
+import './sponsor.css';
 
-const SponsoredScreen: React.FC = () => {
+const SponsorScreen: React.FC = () => {
   const [nameValue, setNameValue] = useState('');
   const [lastNameValue, setLastNameValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
   const [phoneValue, setPhoneValue] = useState('');
-  const [courseValue, setCourseValue] = useState('');
-  const [myMomentTextValue, setMyMomentTextValue] = useState('');
-  const [biographyValue, setBiographyValue] = useState('');
-  const [incomeValue, setIncomeValue] = useState('');
+  const [documentValue, setDocumentValue] = useState('');
+  const [investmentRangeValue, setInvestmentRangeValue] = useState(100);
   const [passwordValue, setPasswordValue] = useState('');
 
   const [step, setStep] = useState(1);
@@ -36,38 +34,32 @@ const SponsoredScreen: React.FC = () => {
   const handlePhoneInputChange = (value: string) => {
     setPhoneValue(value);
   };
-  const handleCourseInputChange = (value: string) => {
-    setCourseValue(value);
-  };
-  const handleMyMomentTextChange = (value: string) => {
-    setMyMomentTextValue(value);
-  };
-  const handleBiographyTextAreaChange = (value: string) => {
-    setBiographyValue(value);
-  };
-  const handleIncomeInputChange = (value: string) => {
-    setIncomeValue(value);
+  const handleDocumentInputChange = (value: string) => {
+    setDocumentValue(value);
   };
   const handlePasswordInputChange = (value: string) => {
     setPasswordValue(value);
   };
+  const handleInvestmentRangeValueChange = (value: number) => {
+    setInvestmentRangeValue(value);
+  };
 
   const handleContinue = () => {
     if (step === 7) {
-      const sponsored = new SponsoredModel(
+      const sponsor = new SponsorModel(
         nameValue,
         lastNameValue,
         emailValue,
         passwordValue,
         phoneValue,
-        courseValue,
-        myMomentTextValue,
-        incomeValue,
-        biographyValue
+        documentValue.length > 11 ? SponsorType.Company : SponsorType.Person,
+        documentValue,
+        1000
+        // investmentRangeValue
       );
 
       const db = Database.getDatabase();
-      db.addSponsored(sponsored);
+      db.addSponsor(sponsor);
     }
     setStep(step + 1);
   };
@@ -84,10 +76,10 @@ const SponsoredScreen: React.FC = () => {
         disabled={!nameValue || !lastNameValue}
       >
         <>
-          <p className="Sponsored_p">
+          <p className="Sponsor_p">
             Olá! Todo mundo quer saber, como te chamamos?
           </p>
-          <div className="Sponsored_inputs">
+          <div className="Sponsor_inputs">
             <Input
               placeholder="Nome"
               type="text"
@@ -116,8 +108,8 @@ const SponsoredScreen: React.FC = () => {
         disabled={!emailValue || !phoneValue}
       >
         <>
-          <p className="Sponsored_p">Como entramos em contato com você?</p>
-          <div className="Sponsored_inputs">
+          <p className="Sponsor_p">Como entramos em contato com você?</p>
+          <div className="Sponsor_inputs">
             <Input
               placeholder="E-mail"
               type="email"
@@ -143,12 +135,16 @@ const SponsoredScreen: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
-        disabled={!courseValue}
+        disabled={documentValue.length < 11}
       >
         <>
-          <p className="Sponsored_p">Qual curso você gostaria de fazer?</p>
-          <div className="Sponsored_dropdown">
-            <Dropdown handleChange={handleCourseInputChange} />
+          <p className="Sponsor_p">Qual curso você gostaria de fazer?</p>
+          <div className="Sponsor_dropdown">
+            <Input
+              placeholder="CPF ou CNPJ"
+              type="cpf"
+              handleChange={handleDocumentInputChange}
+            />
           </div>
         </>
       </RegisterBox>
@@ -164,77 +160,23 @@ const SponsoredScreen: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
-        disabled={!myMomentTextValue}
+        disabled={!investmentRangeValue}
       >
         <>
-          <p className="Sponsored_p">
-            Conta pra gente: como está seu momento agora?
-          </p>
-          <div className="Sponsored_textarea-container">
-            <textarea
-              className="Sponsored_textarea"
-              rows={8}
-              cols={100}
-              onChange={(e) => handleMyMomentTextChange(e.target.value)}
-            />
-          </div>
+          <p className="Sponsor_p">Até quanto você deseja investir?</p>
+          <SliderInput
+            onChange={handleInvestmentRangeValueChange}
+            min={300}
+            max={10000}
+            currentIndex={investmentRangeValue}
+            defaultValue={800}
+          />
         </>
       </RegisterBox>
     );
   };
 
   const renderStep5 = () => {
-    if (step !== 5) {
-      return null;
-    }
-
-    return (
-      <RegisterBox
-        imageUrl="/register-headset-image.png"
-        onContinue={handleContinue}
-        disabled={!incomeValue}
-      >
-        <>
-          <p className="Sponsored_p">Pergunta sobre a renda familiar dele</p>
-          <div className="Sponsored_inputs">
-            <Input
-              placeholder="Renda familiar em reais"
-              type="text"
-              handleChange={handleIncomeInputChange}
-            />
-          </div>
-        </>
-      </RegisterBox>
-    );
-  };
-
-  const renderStep6 = () => {
-    if (step !== 6) {
-      return null;
-    }
-
-    return (
-      <RegisterBox
-        imageUrl="/register-headset-image.png"
-        onContinue={handleContinue}
-        disabled={!biographyValue}
-      >
-        <>
-          <p className="Sponsored_p">Pergunta sobre a história de vida dele</p>
-          <div className="Sponsored_textarea-container">
-            <textarea
-              className="Sponsored_textarea"
-              rows={8}
-              cols={100}
-              onChange={(e) => handleBiographyTextAreaChange(e.target.value)}
-            />
-          </div>
-        </>
-      </RegisterBox>
-    );
-  };
-
-  const renderStep7 = () => {
     if (step !== 7) {
       return null;
     }
@@ -246,8 +188,8 @@ const SponsoredScreen: React.FC = () => {
         disabled={!passwordValue}
       >
         <>
-          <p className="Sponsored_p">Para finalizarmos, insira uma senha</p>
-          <div className="Sponsored_inputs">
+          <p className="Sponsor_p">Para finalizarmos, insira uma senha</p>
+          <div className="Sponsor_inputs">
             <Input
               placeholder="Senha"
               type="password"
@@ -260,17 +202,24 @@ const SponsoredScreen: React.FC = () => {
   };
 
   return (
-    <div className="Sponsored_container">
-      <div className="Sponsored_header">
+    <div className="Sponsor_container">
+      <div className="Sponsor_header">
         <Logo />
-        <nav className="Sponsored_buttons">
+        <nav className="Sponsor_buttons">
+          {/* <Button
+            buttonText="Quero participar"
+            buttonColor="#00e88f"
+            borderColor="#00e88f"
+            buttonTextColor="#000"
+            url="/apadrinhado/cadastro"
+          /> */}
           <Button
             buttonText="Entrar"
             buttonColor="#000"
             borderColor="#fff"
             buttonTextColor="#fff"
             useBorder
-            url="/login"
+            url="/screen/100"
           />
         </nav>
       </div>
@@ -279,10 +228,8 @@ const SponsoredScreen: React.FC = () => {
       {renderStep3()}
       {renderStep4()}
       {renderStep5()}
-      {renderStep6()}
-      {renderStep7()}
     </div>
   );
 };
 
-export default SponsoredScreen;
+export default SponsorScreen;

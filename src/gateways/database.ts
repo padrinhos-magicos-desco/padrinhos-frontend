@@ -1,5 +1,5 @@
 import { Guid } from 'guid-typescript';
-import { Sponsor } from '../domain/sponsor';
+import Sponsor from '../domain/sponsor';
 import Sponsored from '../domain/sponsored';
 import { Sponsorship } from '../domain/sponsorship';
 
