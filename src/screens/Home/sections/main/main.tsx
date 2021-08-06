@@ -28,11 +28,10 @@ const MainSection: React.FC = () => {
       </div>
       <div className="Main_content">
         <div className="Main_main-text">
-          <h1 className="Main_h1">PADRINHOS MÁGICOS ATIVAR!</h1>
+          <h1 className="Main_h1">O FUTURO DA EDUCAÇÃO PASSA PRO VOCÊ</h1>
           <h2 className="Main_h2">
-            Um subtítulo que contextualize o rolê do apadrinhamento e como isso
-            é importante para a educação. Que somos uma empresa foda pra caralho
-            e vamos mudar a educação do mundo.
+            Conheça nosso programa de apadrinhamento, tanto para quem pode
+            ajudar, quanto pra quem precisa de ajuda
           </h2>
         </div>
         <img alt="" className="Main_image" src="/main-people.png" />

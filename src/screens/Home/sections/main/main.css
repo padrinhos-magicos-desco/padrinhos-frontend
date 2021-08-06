@@ -72,6 +72,13 @@
 .Main_h2 {
   width: 382px;
   color: #fff;
+
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 28px;
+
+  letter-spacing: -0.6px;
+
+  color: #ffffff;
 }
