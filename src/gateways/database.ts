@@ -1,5 +1,5 @@
 import { Guid } from 'guid-typescript';
-import { Sponsor, SponsorType } from '../domain/sponsor';
+import Sponsor, { SponsorType } from '../domain/sponsor';
 import Sponsored from '../domain/sponsored';
 import { Sponsorship } from '../domain/sponsorship';
 
@@ -11,10 +11,9 @@ class Database {
       'padrinho@magico.com',
       '123456',
       '2199999998',
-      'Rua das Couves, 15',
       SponsorType.Person,
       '12345678901',
-      4000
+      '4000'
     ),
   ];
 
