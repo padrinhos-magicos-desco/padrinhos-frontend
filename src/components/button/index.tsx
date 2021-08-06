@@ -22,14 +22,12 @@ const Button: React.FC<Props> = ({
   url,
   isAnchor,
 }: Props) => {
+  const linkContent = <p style={{ color: buttonTextColor }}>{buttonText}</p>;
+
   const link = isAnchor ? (
-    <Link to={url}>
-      <p style={{ color: buttonTextColor }}>{buttonText}</p>
-    </Link>
+    <Link to={url}>{linkContent}</Link>
   ) : (
-    <HashLink to={url}>
-      <p style={{ color: buttonTextColor }}>{buttonText}</p>
-    </HashLink>
+    <HashLink to={url}>{linkContent}</HashLink>
   );
 
   return (
