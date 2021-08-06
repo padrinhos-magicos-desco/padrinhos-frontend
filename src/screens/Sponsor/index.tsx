@@ -9,7 +9,7 @@ import Logo from '../../components/logo';
 import Input from '../../components/input';
 import SliderInput from '../../components/slider-input';
 
-import './sponsored.css';
+import './sponsor.css';
 
 const SponsorScreen: React.FC = () => {
   const [nameValue, setNameValue] = useState('');
