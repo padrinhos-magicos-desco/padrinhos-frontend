@@ -124,7 +124,7 @@ class Database {
       'Marketing',
       'As experiências acumuladas demonstram que a competitividade nas transações comerciais ainda não demonstrou convincentemente que vai participar na mudança do fluxo de informações.',
       750,
-      'In elementis mé pra quem é amistosis quis leo. Suco de cevadiss deixa as pessoas mais interessantis. Quem num gosta di mé, boa gentis num é. Quem manda na minha terra sou euzis!',
+      'Eu sou a Milena, sou de Barreirinhas no Maranhão, vim de escola pública e não tive condições de pagar a mensalidade do vestibular Descomplica. Estudei com vocês pelo youtube e passei para uma universidade pública, porém não tive condições de manter meus estudos devido a necessidade de deslocamento...',
       89
     ),
     new Sponsored(
