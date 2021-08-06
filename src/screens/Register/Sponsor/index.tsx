@@ -227,7 +227,7 @@ const SponsorScreen: React.FC = () => {
         disabled={false}
       >
         <>
-          <p className="Sponsor_p">Efetue seu pagamento</p>
+          <p className="Sponsor_p">Insira os dados do seu cartão</p>
           <div className="Sponsor_checkout-inputs Sponsor_checkout-fullsize-inputs">
             <Input
               key="cardNumber"
