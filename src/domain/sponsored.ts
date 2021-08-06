@@ -9,6 +9,8 @@ class Sponsored extends BasePerson {
 
   public MonthlyIncome: string;
 
+  public Progress?: number = 0;
+
   constructor(
     name: string,
     lastName: string,
@@ -18,13 +20,15 @@ class Sponsored extends BasePerson {
     desiredCourse: string,
     myMoment: string,
     monthlyIncome: string,
-    biography: string
+    biography: string,
+    progress?: number
   ) {
     super(name, lastName, email, password, phone);
     this.DesiredCourse = desiredCourse;
     this.MyMoment = myMoment;
     this.Biography = biography;
     this.MonthlyIncome = monthlyIncome;
+    this.Progress = progress || 0;
   }
 }
 
