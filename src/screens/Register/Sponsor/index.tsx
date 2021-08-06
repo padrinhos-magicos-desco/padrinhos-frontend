@@ -54,7 +54,7 @@ const SponsorScreen: React.FC = () => {
         phoneValue,
         documentValue.length > 11 ? SponsorType.Company : SponsorType.Person,
         documentValue,
-        1000
+        '1000'
         // investmentRangeValue
       );
 

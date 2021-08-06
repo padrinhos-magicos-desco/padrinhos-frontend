@@ -6,7 +6,7 @@ class Sponsor extends BasePerson {
   // CPF ou CNPJ
   public Document: string;
 
-  public InvestmentRange: number;
+  public InvestmentRange: string;
 
   constructor(
     name: string,
@@ -16,7 +16,7 @@ class Sponsor extends BasePerson {
     phone: string,
     type: SponsorType,
     document: string,
-    investmentRange: number
+    investmentRange: string
   ) {
     super(name, lastName, email, password, phone);
     this.Type = type;

@@ -1,12 +1,23 @@
 import { Guid } from 'guid-typescript';
-import Sponsor from '../domain/sponsor';
+import Sponsor, { SponsorType } from '../domain/sponsor';
 import Sponsored from '../domain/sponsored';
 import { Sponsorship } from '../domain/sponsorship';
 
 class Database {
   public static loggedUser: Sponsor | Sponsored;
 
-  private Sponsors: Array<Sponsor> = [];
+  private Sponsors: Array<Sponsor> = [
+    new Sponsor(
+      'Padrinho',
+      'Magico',
+      'padrinho@magico.com',
+      '123456',
+      '2199999998',
+      SponsorType.Person,
+      '12345678901',
+      '4000'
+    ),
+  ];
 
   private Sponsoreds: Array<Sponsored> = [
     new Sponsored(
