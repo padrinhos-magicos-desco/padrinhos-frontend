@@ -143,6 +143,31 @@ const SponsoredScreen: React.FC = () => {
       <RegisterBox
         imageUrl="/register-headset-image.png"
         onContinue={handleContinue}
+        disabled={!passwordValue}
+      >
+        <>
+          <p className="Sponsored_p">Crie uma senha</p>
+          <div className="Sponsored_inputs">
+            <Input
+              placeholder="Senha"
+              type="password"
+              handleChange={handlePasswordInputChange}
+            />
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
+  const renderStep4 = () => {
+    if (step !== 4) {
+      return null;
+    }
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
         disabled={!courseValue}
       >
         <>
@@ -155,8 +180,8 @@ const SponsoredScreen: React.FC = () => {
     );
   };
 
-  const renderStep4 = () => {
-    if (step !== 4) {
+  const renderStep5 = () => {
+    if (step !== 5) {
       return null;
     }
 
@@ -183,8 +208,8 @@ const SponsoredScreen: React.FC = () => {
     );
   };
 
-  const renderStep5 = () => {
-    if (step !== 5) {
+  const renderStep6 = () => {
+    if (step !== 6) {
       return null;
     }
 
@@ -208,8 +233,8 @@ const SponsoredScreen: React.FC = () => {
     );
   };
 
-  const renderStep6 = () => {
-    if (step !== 6) {
+  const renderStep7 = () => {
+    if (step !== 7) {
       return null;
     }
 
@@ -227,31 +252,6 @@ const SponsoredScreen: React.FC = () => {
               rows={8}
               cols={100}
               onChange={(e) => handleBiographyTextAreaChange(e.target.value)}
-            />
-          </div>
-        </>
-      </RegisterBox>
-    );
-  };
-
-  const renderStep7 = () => {
-    if (step !== 7) {
-      return null;
-    }
-
-    return (
-      <RegisterBox
-        imageUrl="/register-headset-image.png"
-        onContinue={handleContinue}
-        disabled={!passwordValue}
-      >
-        <>
-          <p className="Sponsored_p">Para finalizarmos, insira uma senha</p>
-          <div className="Sponsored_inputs">
-            <Input
-              placeholder="Senha"
-              type="password"
-              handleChange={handlePasswordInputChange}
             />
           </div>
         </>
