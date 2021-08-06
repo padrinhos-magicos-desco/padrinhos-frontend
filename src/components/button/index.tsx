@@ -10,7 +10,7 @@ type Props = {
   borderColor?: string;
   useBorder?: boolean;
   url?: string;
-  onClick?: () => null;
+  onClick?: () => null | void;
   isAnchor?: boolean;
 };
 

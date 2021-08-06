@@ -1,0 +1,29 @@
+.Modal_blur {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.Modal_container {
+  padding: 50px 20px;
+  z-index: 10;
+  width: 613px;
+  height: 284px;
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.Modal_close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: 1px #000;
+  border-radius: 50%;
+}

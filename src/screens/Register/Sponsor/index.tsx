@@ -8,6 +8,7 @@ import Button from '../../../components/button';
 import Logo from '../../../components/logo';
 import Input from '../../../components/input';
 import SliderInput from '../../../components/slider-input';
+import Modal from '../../../components/modal';
 
 import './sponsor.css';
 
@@ -19,6 +20,7 @@ const SponsorScreen: React.FC = () => {
   const [documentValue, setDocumentValue] = useState('');
   const [investmentRangeValue, setInvestmentRangeValue] = useState(100);
   const [passwordValue, setPasswordValue] = useState('');
+  const [shouldShowModal, setShouldShowConfirmationModal] = useState(false);
 
   const [step, setStep] = useState(1);
 
@@ -46,6 +48,10 @@ const SponsorScreen: React.FC = () => {
 
   const handleContinue = () => {
     if (step === 5) {
+      setShouldShowConfirmationModal(true);
+    }
+
+    if (step === 6) {
       const sponsor = new SponsorModel(
         nameValue,
         lastNameValue,
@@ -66,6 +72,7 @@ const SponsorScreen: React.FC = () => {
       localStorage.setItem('userLogged', JSON.stringify(sponsor));
       window.location.href = '/padrinho';
     }
+
     setStep(step + 1);
   };
 
@@ -229,10 +236,30 @@ const SponsorScreen: React.FC = () => {
     }
   };
 
+  const renderModal = () => {
+    if (!shouldShowModal) return null;
+    return (
+      <Modal onCloseClick={() => setShouldShowConfirmationModal(false)}>
+        <>
+          <div className="Sponsor_modal-content">
+            <h3 className="Sponsor_modal-title">Confirmação de compromisso</h3>
+            <p className="Sponsor_modal-text">
+              A partir desse momento, você se compromete a ajudar no futuro da
+              educação no Brasil, formando novos profissionais para as mais
+              diversas carreiras
+            </p>
+            <Button buttonText="Quero participar" onClick={handleContinue} />
+          </div>
+        </>
+      </Modal>
+    );
+  };
+
   return (
     <div className="Sponsor_container">
       <div className="Sponsor_header">
         <Logo />
+
         <nav className="Sponsor_buttons">
           {/* <Button
             buttonText="Quero participar"
@@ -251,6 +278,7 @@ const SponsorScreen: React.FC = () => {
           />
         </nav>
       </div>
+      {renderModal()}
       {renderCurrentStep()}
     </div>
   );
