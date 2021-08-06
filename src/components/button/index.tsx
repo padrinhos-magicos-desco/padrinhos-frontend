@@ -27,7 +27,16 @@ const Button: React.FC<Props> = ({
   const render = () => {
     if (url) {
       const linkContent = (
-        <p style={{ color: buttonTextColor }}>{buttonText}</p>
+        <div
+          className="Button_container"
+          style={{
+            backgroundColor: buttonColor,
+            borderColor,
+            borderWidth: useBorder ? '1.5px' : '0px',
+          }}
+        >
+          <p style={{ color: buttonTextColor }}>{buttonText}</p>
+        </div>
       );
 
       const link = isAnchor ? (
@@ -36,20 +45,7 @@ const Button: React.FC<Props> = ({
         <HashLink to={url}>{linkContent}</HashLink>
       );
 
-      return (
-        <Link to={url}>
-          <div
-            className="Button_container"
-            style={{
-              backgroundColor: buttonColor,
-              borderColor,
-              borderWidth: useBorder ? '1.5px' : '0px',
-            }}
-          >
-            {link}
-          </div>
-        </Link>
-      );
+      return link;
     }
 
     return (

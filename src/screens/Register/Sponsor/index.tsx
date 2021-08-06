@@ -206,20 +206,13 @@ const SponsorScreen: React.FC = () => {
       <div className="Sponsor_header">
         <Logo />
         <nav className="Sponsor_buttons">
-          {/* <Button
-            buttonText="Quero participar"
-            buttonColor="#00e88f"
-            borderColor="#00e88f"
-            buttonTextColor="#000"
-            url="/apadrinhado/cadastro"
-          /> */}
           <Button
             buttonText="Entrar"
             buttonColor="#000"
             borderColor="#fff"
             buttonTextColor="#fff"
             useBorder
-            url="/screen/100"
+            url="/login"
           />
         </nav>
       </div>
