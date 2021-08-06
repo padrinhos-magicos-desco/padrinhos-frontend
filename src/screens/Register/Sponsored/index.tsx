@@ -8,6 +8,7 @@ import Button from '../../../components/button';
 import Logo from '../../../components/logo';
 import Input from '../../../components/input';
 import Dropdown from '../../../components/dropdown';
+import ShareButtons from '../../../components/share-buttons';
 
 import './sponsored.css';
 import SliderInput from '../../../components/slider-input';
@@ -54,7 +55,7 @@ const SponsoredScreen: React.FC = () => {
   };
 
   const handleContinue = () => {
-    if (step === 7) {
+    if (step === 8) {
       const sponsored = new SponsoredModel(
         nameValue,
         lastNameValue,
@@ -287,6 +288,33 @@ const SponsoredScreen: React.FC = () => {
     );
   };
 
+  const renderStep8 = () => {
+    if (step !== 8) {
+      return null;
+    }
+
+    return (
+      <RegisterBox
+        imageUrl="/register-headset-image.png"
+        onContinue={handleContinue}
+        final
+      >
+        <>
+          <h2 className="Sponsored_h2">
+            Você terminou de nos contar a sua história
+          </h2>
+          <div className="Sponsored_final">
+            <p className="Sponsored_p">{biographyValue}</p>
+            <ShareButtons shareText={biographyValue} />
+            <button type="button" onClick={() => handleContinue()}>
+              Ir para a plataforma
+            </button>
+          </div>
+        </>
+      </RegisterBox>
+    );
+  };
+
   return (
     <div className="Sponsored_container">
       <div className="Sponsored_header">
@@ -309,6 +337,7 @@ const SponsoredScreen: React.FC = () => {
       {renderStep5()}
       {renderStep6()}
       {renderStep7()}
+      {renderStep8()}
     </div>
   );
 };

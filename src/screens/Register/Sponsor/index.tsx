@@ -51,6 +51,10 @@ const SponsorScreen: React.FC = () => {
       setShouldShowConfirmationModal(true);
     }
 
+    if (step === 6) {
+      setShouldShowConfirmationModal(false);
+    }
+
     if (step === 7) {
       const sponsor = new SponsorModel(
         nameValue,
@@ -325,7 +329,7 @@ const SponsorScreen: React.FC = () => {
             borderColor="#fff"
             buttonTextColor="#fff"
             useBorder
-            url="/screen/100"
+            url="/login"
           />
         </nav>
       </div>

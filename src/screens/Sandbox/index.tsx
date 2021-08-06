@@ -1,5 +1,5 @@
 import RegisterBox from '../../components/register-box';
-import ShareButton from '../../components/share-button';
+import ShareButtons from '../../components/share-buttons';
 
 import './sandbox.css';
 
@@ -14,7 +14,7 @@ const Sandbox: React.FC = () => {
           <p className="Sandbox_p">
             Olá! Todo mundo quer saber, como te chamamos?
           </p>
-          <ShareButton shareText="Confira aqui!" />
+          <ShareButtons shareText="Confira aqui!" />
         </>
       </RegisterBox>
     </>
