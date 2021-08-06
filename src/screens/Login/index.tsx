@@ -9,7 +9,7 @@ import './login.css';
 type TParams = { id: string };
 type Props = RouteComponentProps<TParams>;
 
-const Login: React.FC<Props> = () => {
+const LoginScreen: React.FC<Props> = () => {
   return (
     <>
       <div className="Login_container">
@@ -28,4 +28,4 @@ const Login: React.FC<Props> = () => {
   );
 };
 
-export default Login;
+export default LoginScreen;
