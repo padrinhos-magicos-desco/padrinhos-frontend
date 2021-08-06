@@ -1,27 +1,30 @@
 import BasePerson from './base-person';
 
 class Sponsored extends BasePerson {
+  public DesiredCourse: string;
+
   public MyMoment: string;
 
   public Biography: string;
 
-  public IncomeRange: string;
+  public MonthlyIncome: string;
 
   constructor(
-    id: number,
     name: string,
     lastName: string,
     email: string,
     password: string,
     phone: string,
-    workInformation: string,
-    biography: string,
-    incomeRange: string
+    desiredCourse: string,
+    myMoment: string,
+    monthlyIncome: string,
+    biography: string
   ) {
-    super(id, name, lastName, email, password, phone);
-    this.MyMoment = workInformation;
+    super(name, lastName, email, password, phone);
+    this.DesiredCourse = desiredCourse;
+    this.MyMoment = myMoment;
     this.Biography = biography;
-    this.IncomeRange = incomeRange;
+    this.MonthlyIncome = monthlyIncome;
   }
 }
 

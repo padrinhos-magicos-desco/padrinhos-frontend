@@ -11,7 +11,6 @@ export class Sponsor extends BasePerson {
   public InvestmentRange: number;
 
   constructor(
-    id: number,
     name: string,
     lastName: string,
     email: string,
@@ -22,7 +21,7 @@ export class Sponsor extends BasePerson {
     document: string,
     investmentRange: number
   ) {
-    super(id, name, lastName, email, password, phone);
+    super(name, lastName, email, password, phone);
     this.Address = address;
     this.Type = type;
     this.Document = document;

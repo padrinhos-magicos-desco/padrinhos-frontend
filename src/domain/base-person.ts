@@ -1,5 +1,7 @@
+import { Guid } from 'guid-typescript';
+
 export default class BasePerson {
-  public Id: number;
+  public Id: Guid;
 
   public Name: string;
 
@@ -12,14 +14,13 @@ export default class BasePerson {
   public Phone: string;
 
   constructor(
-    id: number,
     name: string,
     lastName: string,
     email: string,
     password: string,
     phone: string
   ) {
-    this.Id = id;
+    this.Id = Guid.create();
     this.Name = name;
     this.LastName = lastName;
     this.Email = email;
