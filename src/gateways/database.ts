@@ -1,3 +1,4 @@
+import { Guid } from 'guid-typescript';
 import { Sponsor } from '../domain/sponsor';
 import Sponsored from '../domain/sponsored';
 import { Sponsorship } from '../domain/sponsorship';
@@ -9,8 +10,13 @@ class Database {
 
   private Sponsorships: Array<Sponsorship> = [];
 
+  private static singleDatabase: Database | undefined;
+
   public static getDatabase(): Database {
-    return new Database();
+    if (!this.singleDatabase) {
+      this.singleDatabase = new Database();
+    }
+    return this.singleDatabase;
   }
 
   // #region sponsors methods
@@ -18,16 +24,16 @@ class Database {
     return this.Sponsors;
   }
 
-  public getSponsor(id: number): Sponsor | undefined {
-    return this.Sponsors.find((sponsor) => sponsor.Id === id);
+  public getSponsor(id: string): Sponsor | undefined {
+    return this.Sponsors.find((sponsor) => sponsor.Id === Guid.parse(id));
   }
 
   public addSponsor(sponsor: Sponsor): void {
     this.Sponsors.push(sponsor);
   }
 
-  public removeSponsor(id: number): void {
-    this.Sponsors = this.Sponsors.filter((sp) => sp.Id !== id);
+  public removeSponsor(id: string): void {
+    this.Sponsors = this.Sponsors.filter((sp) => sp.Id !== Guid.parse(id));
   }
   // #endregion
 
@@ -36,29 +42,29 @@ class Database {
     return this.Sponsoreds;
   }
 
-  public getSponsored(id: number): Sponsored | undefined {
-    return this.Sponsoreds.find((sponsor) => sponsor.Id === id);
+  public getSponsored(id: string): Sponsored | undefined {
+    return this.Sponsoreds.find((sponsor) => sponsor.Id === Guid.parse(id));
   }
 
   public addSponsored(sponsored: Sponsored): void {
     this.Sponsoreds.push(sponsored);
   }
 
-  public removeSponsored(id: number): void {
-    this.Sponsoreds = this.Sponsoreds.filter((sp) => sp.Id !== id);
+  public removeSponsored(id: string): void {
+    this.Sponsoreds = this.Sponsoreds.filter((sp) => sp.Id !== Guid.parse(id));
   }
   // #endregion
 
   // #region sponsorships methods
-  public getSponsorshipsBySponsorId(id: number): Sponsorship | undefined {
+  public getSponsorshipsBySponsorId(id: string): Sponsorship | undefined {
     return this.Sponsorships.find(
-      (sponsorship) => sponsorship.Sponsor.Id === id
+      (sponsorship) => sponsorship.Sponsor.Id === Guid.parse(id)
     );
   }
 
-  public getSponsorshipsBySponsoredId(id: number): Sponsorship | undefined {
+  public getSponsorshipsBySponsoredId(id: string): Sponsorship | undefined {
     return this.Sponsorships.find(
-      (sponsorship) => sponsorship.Sponsored.Id === id
+      (sponsorship) => sponsorship.Sponsored.Id === Guid.parse(id)
     );
   }
 
