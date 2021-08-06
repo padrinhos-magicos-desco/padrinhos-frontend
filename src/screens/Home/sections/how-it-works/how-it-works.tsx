@@ -11,11 +11,11 @@ const HowItWorksSection: React.FC = () => {
           title="Padrinho"
           subtitle="O que acontece, com quem, onde etc. Pq é bom ser padrinho"
           topics={[
-            'O que eu ganho com isso',
-            'O que eu ganho com isso',
-            'O que eu ganho com isso',
-            'O que eu ganho com isso',
-            'O que eu ganho com isso',
+            '1) Cadastre- se',
+            '2) Escolha o quanto quer doar',
+            '3) Escolha a história que quer mudar ',
+            '4) Pronto, você está fazendo a diferença! ',
+            '5) Compartilhe com amigos',
           ]}
           buttonText="Quero apadrinhar alguém"
           buttonUrl="/padrinho/cadastro"
@@ -25,11 +25,11 @@ const HowItWorksSection: React.FC = () => {
           title="Apadrinhado"
           subtitle="O que acontece, com quem, onde etc. Pq é bom ser padrinho"
           topics={[
-            'O que eu ganho com isso',
-            'O que eu ganho com isso',
-            'O que eu ganho com isso',
-            'O que eu ganho com isso',
-            'O que eu ganho com isso',
+            '1) Cadastre- se',
+            '2) Escolha o quanto quer doar',
+            '3) Escolha a história que quer mudar ',
+            '4) Pronto, você está fazendo a diferença! ',
+            '5) Compartilhe com amigos',
           ]}
           buttonText="Quero ter um padrinho"
           buttonUrl="/apadrinhado/cadastro"

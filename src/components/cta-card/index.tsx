@@ -1,5 +1,4 @@
 import Button from '../button';
-import Check from '../icon/Check';
 
 import './cta-card.css';
 import Stamp from './stamp';
@@ -28,10 +27,7 @@ const CTACard: React.FC<Props> = ({
       <div className="CTACard_topics">
         {topics.map((topic) => (
           <>
-            <p className="CTACard_topic">
-              <Check />
-              {topic}
-            </p>
+            <p className="CTACard_topic">{topic}</p>
           </>
         ))}
         {showStamp && (
