@@ -10,6 +10,7 @@ type Props = {
   topics: string[];
   buttonText: string;
   showStamp?: boolean;
+  buttonUrl: string;
 };
 
 const CTACard: React.FC<Props> = ({
@@ -18,6 +19,7 @@ const CTACard: React.FC<Props> = ({
   topics,
   buttonText,
   showStamp,
+  buttonUrl,
 }: Props) => {
   return (
     <div className="CTACard_container">
@@ -38,7 +40,7 @@ const CTACard: React.FC<Props> = ({
           </div>
         )}
       </div>
-      <Button buttonText={buttonText} url="/apadrinhado/cadastro" />
+      <Button buttonText={buttonText} url={buttonUrl} />
     </div>
   );
 };
