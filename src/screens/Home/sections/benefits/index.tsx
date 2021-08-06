@@ -12,24 +12,27 @@ const BenefitsSection: React.FC = () => {
             <h1>1.</h1>
             <h2>Vantagem para o Brasil</h2>
             <p>
-              Desconte o valor da inscrição do Enem (85 reais) na última turma
-              do ano, começando do zero até o Enem 2021.
+              A plataforma padrinhos mágicos permite o aumento empregabilidade
+              empregabilidade no país e (..)
             </p>
           </div>
           <div className="Benefits_item">
             <h1>2.</h1>
             <h2>Vantagem para o Apadrinhado</h2>
             <p>
-              Cronograma do zero pensado para quem ainda não iniciou os estudos
-              para o Enem e outros vestibulares.
+              Escolha estudar! Escolha uma faculdade ou pós e através da sua
+              história, receba apoio financeiro para essa jornada. Ter o ensino
+              superior completo aumenta em média 182% sua renda e uma pós
+              graduação em média 42%.
             </p>
           </div>
           <div className="Benefits_item">
             <h1>3.</h1>
             <h2>Vantagem para o Padrinho</h2>
             <p>
-              Receba dois cursos exclusivos com foco em: produtividade nos
-              estudos e nivelamento em matemática básica.
+              Permita a escolha do estudo. Acompanhe a jornada de quem você
+              ajudou e troque mensagens de motivação. Receba descontos especiais
+              do Descomplica pra você ou para presentear.
             </p>
           </div>
         </div>
